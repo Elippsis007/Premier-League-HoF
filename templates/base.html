@@ -17,7 +17,7 @@
     {% block corecss %}
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -69,7 +69,7 @@
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account/Dressing Room</p>
+                                <p class="my-0">My Locker</p>
                             </div>
                         </a>
                         <!-- Dropdown Django template tags determin what to display in the menu -->
@@ -81,7 +81,7 @@
                                 <!-- Allows the user to to access link to Manage, Add, Delete products -->
                                     <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile/Locker</a> <!-- If Authenticated -->
+                                <a href="" class="dropdown-item">My Locker</a> <!-- If Authenticated -->
                                 <!-- The "account_logout URL comes from the 'allauth' URLS in the Project Level URLS" -->
                                 <a href="" class="dropdown-item">Logout</a> <!-- If Authenticated -->
                             {% else %} <!-- If not Authenticated -->
@@ -96,7 +96,7 @@
                      <li class="list-inline-item">
                         <!-- This template variable applies classes if there is something in the cart the font will be bold
                                 and if there not it will be normal text -->
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
