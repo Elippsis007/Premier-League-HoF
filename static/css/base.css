@@ -31,19 +31,41 @@ body {
     text-transform: uppercase;
 }
 
+.fa-shopping-cart {
+    color: #37003c;
+}
+
+.fa_shopping_cart {
+    color: #37003c;
+}
+
+.fa-user {
+    color: #37003c;
+}
+
+.fa_user {
+    color: #37003c;
+}
+
 /* This makes it so that the logo only takes up as much space as the text requires and no more */
 .main-logo-link {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
+.banner-font {
     color: white;
-    min-width: 260px;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #37003c;
 }
 
 .btn-black {
-    background: black;
+    background:#37003c;
     color: white;
 }
 
