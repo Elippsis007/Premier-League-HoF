@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +65,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -67,17 +73,44 @@ TEMPLATES = [
     },
 ]
 
+SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # Tells allauth that we want to allow authentication using either usernames/emails
+ACCOUNT_EMAIL_REQUIRED = True # Tells that email is required for registering for the site
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory' # Mandatory for an email address
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True # Will be required for the user to enter their email twice upon registration to eliminate typos
+ACCOUNT_USERNAME_MIN_LENGTH = 4 # Specifies username characther length
+LOGIN_URL = '/accounts/login/' # Specifying a login url
+LOGIN_REDIRECT_URL = '/' # Specifying a url to redirect back to after user logging in.
+
+AUTHENTICATION_BACKENDS = [
+    
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+    
+]
+
+
 WSGI_APPLICATION = 'pl_hof.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse('postgres://cgngmjptoxxraj:fdd012b5c6f1b988e8c6c52afc51ccfadb4eb98f124e50eb80b3b398308ff122@ec2-54-220-243-77.eu-west-1.compute.amazonaws.com:5432/d6nnsq4i9tuv17')
 }
 
 
