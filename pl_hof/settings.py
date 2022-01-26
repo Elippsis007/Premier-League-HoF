@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'contents',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +114,7 @@ WSGI_APPLICATION = 'pl_hof.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://cgngmjptoxxraj:fdd012b5c6f1b988e8c6c52afc51ccfadb4eb98f124e50eb80b3b398308ff122@ec2-54-220-243-77.eu-west-1.compute.amazonaws.com:5432/d6nnsq4i9tuv17')
+    #'default': dj_database_url.parse('postgres://cgngmjptoxxraj:fdd012b5c6f1b988e8c6c52afc51ccfadb4eb98f124e50eb80b3b398308ff122@ec2-54-220-243-77.eu-west-1.compute.amazonaws.com:5432/d6nnsq4i9tuv17')
 }
 
 

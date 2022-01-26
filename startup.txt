@@ -1,0 +1,381 @@
+-- Installing Django (**Needs to be done on each launch)
+1. pip3 install Django==3.2
+
+
+-- Creating project in the current directory (** NOT Necessary for launching project again.)
+2. django-admin startproject boutique_ado .
+
+
+-- Create gitignore file (**Not necessary for launching project again.)
+3. touch .gitignore
+
+
+-- Run server
+4. python3 manage.py runserver
+
+
+-- Migrations
+5. python3 manage.py migrate
+
+
+-- Create a superuser so I can login into admin console.
+6. python3 manage.py createsuperuser (** Necessary for launching project again.)
+    admin / Cristina007
+
+
+-- Installing Allauth
+7. pip3 install django-allauth==0.41.0 (** Necessary for launching project again.)
+    
+    7.2 ** Be sure to get the Allauth "AUTHENTICATION_BACKENDS" to add to our "settings.py" file.
+
+        AUTHENTICATION_BACKENDS = [
+
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+    7.3 ** Be sure to get the "installed apps" from the document and add to "settings.py" file
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+
+-- Add SITE_ID = 1 to the settings.py
+8. Add SITE_ID = 1 under AUTHENTICATION_BACKENDS
+
+
+-- Adding allauth URLS to our project "urls.py" file.
+    * Creating a path called accounts/ and it's used to include all of the allauth.urls
+9. Create a "path" => path('accounts/', include('allauth.urls')), 
+
+
+-- Adding "include to "urls.py" file 
+10. In "urls.py" on the line => from django.urls import path, "include" needs to be added 
+    Gives me all the urls I need for the login, logout, password resets etc.
+
+
+-- Run the server and navigate to /admin url to login
+11. Login to the admin console
+
+
+-- Change sites domain
+12. Navigate to sites and give name of site eg. boutique_ado.example.com
+    Change your display name to eg. Boutique Ado
+    ** This is a critical setting if I am using social media authentication
+        This isn't something I am doing now but no harm in doing it in the case that we would
+        use social media authentication in the future.
+
+
+-- Adding EMAIL_BACKEND to "settings.py" file
+13.  By default allauth will send confirmation emails to ANY NEW accounts
+     Those emails have to be temporarily logged to the console so we can get the confirmation links
+
+     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' => Add this under SITE_ID in "settings.py"
+
+
+-- Additional settings for the "settings.py" file
+
+14. ACCOUNT_AUTHENTICATION_METHOD = 'username_email' --> Tells allauth that we want to allow authentication using either usernames/emails
+    ACCOUNT_EMAIL_REQUIRED = True --> Tells that email is required for registering for the site
+    ACCOUNT_EMAIL_VERIFICATION = 'mandatory' --> Mandatory for an email address
+    ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True --> Will be required for the user to enter their email twice upon registration to eliminate typos
+    ACCOUNT_USERNAME_MIN_LENGTH = 4 --> Specifies username characther length
+    LOGIN_URL = '/accounts/login/' --> Specifying a login url
+    LOGIN_REDIRECT_URL = '/success' --> Specifying a url to redirect back to after user logging in.  
+
+
+-- Would be a good idea to "freeze-requirements"
+15. pip3 freeze > requirements.txt
+
+
+-- Create templates directory for me to write some frontend code
+16. mkdir templates
+
+-- Create allauth template to hold the customized allauth templates
+17. mkdir templates/allauth
+
+
+-- Making a copy of the "allauth" templates for customizaton
+18. cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
+    * Will create a list of files inside "templates/allauth"
+    
+
+-- Creating a base.html
+19. Right click on the templates directory folder and create new file for our base.html file
+    Here we should go to Bootstrap to get a boilerplate template for the website.
+    ** import jQuery 
+
+
+   <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+-- Add compatiability support for Edge - To elimiate validation errors when validation HTML
+20. <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    Add this line of code above UTF-8
+
+
+-- Move the JScript src under above the title so that it loads faster
+21.
+
+
+-- Add "load static" to the top of the page above our doc string
+22. Add {% load static %} 
+    * Advisable now to commit changes
+
+
+NOTE -- The base template will now act as a framework for our entire project
+        Advisable to organize the base template into blocks so that when it's extended
+        later on I can replace chunks of the blocsk when I need to.
+
+        Wrap the "meta" content in a {% block %} --> {% endblock %}
+        Wrap the "bootstrap css" content in a {% block corecss %} --> {% endblock %}
+        Wrap the "JavaScript" content in a {% block jscore %} --> {% endblock %}
+
+        ** In the case that I want to add any extra "meta", "js", "css" without
+            causing issues to the core requirements, add 3 "EXTRA" blocks
+
+        {% block extra_meta %}
+        {% endblock %}
+
+        {% block extra_css %}
+        {% endblock %}
+
+        {% block extra_js %}
+        {% endblock %}
+
+        <title>Boutique Ado {% block extra_title %}{% endblock %} </title>
+        * This is ideal for when you wish to say Boutique Ado - Products or Contact etc..
+
+
+--  Django messages device
+23. Create a div with class called "message-container" and wrap around {% if messages %} {% endif %}
+
+
+-- Add a block page header which will act as an additional header on pages that use this template
+    and in the case that I want to put something at the top of those pages but underneatht the main header
+    
+24. {% block page_header %}
+    {% endblock %}
+
+
+-- A place for my main page content itself to go
+25. Add a block content {% block content %} 
+    {% endblock %}
+
+-- A place for the JavaScript that I want to load at the end of the body
+26. {% block postload.js %} 
+    {% endblock %}
+
+
+-- Creating a "Home App"
+27. Here we can use the "base.html" template to get the "Home page" up and running
+    
+    ** To do this type: python3 manage.py startapp home 
+    Press Enter
+    I need a "templates directory INSIDE the home file:
+    Type: mkdir -p home/templates/home
+    
+    Once created, right click the inner home directory and create a NEW file called: index.html 
+
+
+-- Using the "base template" inside my "index.html" page
+28. Extend "base.html" inside my index.html page.
+
+    * {% extends "base.html" %}
+    * {% load static %}
+
+    Then add a content block with some content in it.
+    * {% block content %}
+        ** To know if this is working, add a h1 element with a message
+      {% endblock %}
+    
+    
+-- I have create a view to view this template, so I go to "views.py"
+29. Define an "index" view:
+    def index(request):
+        """ A view to return the index page """
+        return render(request, 'home/index.html')
+
+
+-- Next copy the project-level urls.py
+30. Create a new file in the "home app" and call it "urls.py"
+    Paste the content inside the "urls.py"
+    A. Remove the doc strings 
+    B. Remove "include"
+    C. Remove all "paths" and add a path that will render views.index with name of home
+        ** path('', views.index, name='home')
+
+    On the same page, it's necessary to "import views" at the top of the page:
+        from . import views
+
+    D. Go to the project-level URL and include the home URLS:
+        path('', include('home.urls')),
+
+    E. Finally I have to add the "home" app to the "Installed Apps" in "settings.py"
+        and connect up my template directories:
+
+        * Add "home" to installed apps -> 'home',
+        * Navigate to "TEMPLATES" and INSIDE the "DIRS" squared-Brackets:
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+
+
+** Advised run a test: python3 manage.py runserver
+
+
+-- Create folders
+31. Create: mkdir static -- Will hold CSS, JS and other static files
+        Create a base.css file INSIDE the static folder
+    Create: mkdir media -- Will hold homepage image and eventually all of the product images and for new prod uploaded by store owner
+        Upload the homepage image into the media folder
+    Create: mkdir static/css
+
+
+-- Add Google Fonts and FontAwesome
+32. Add Google Fonts and FontAwesome to Base.html blocks
+        Google Fonts -> BlockCoreCSS
+        FontAwesome -> BlockCoreJs
+
+
+-- Add Settings to link Static and Media files
+33. Go to "settings.py"
+    ***** This line of code is supposed to be a Tuple *****
+    Under STATIC_URL file -> Add: STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+    Adding these MEDIA paths which is where all uploaded media files will go: 
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+-- Import Settings and Static Function from Django so that Django can SEE my URLS
+33. Go to "urls.py"
+    from django.conf import settings --> Allows Django to see the MEDIA_URL
+    from django.conf.urls.static import static --> Importing static function  
+
+    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) --> Allows Django to see the MEDIA_URL
+
+*** Test site now and see how it looks :)
+
+
+-- Creating another row under <div id="topnav"></div>
+34. <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+    </div>
+    --> Here created new <div></div>
+
+     <div class="row bg-white">
+            <!-- Here is Bootstrap Navbar -->
+                                                *** See the attribute 100% ***
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+
+-- Create a folder in "Templates" called "includes"
+34. mkdir templates/includes -> A place where I can create small snippets of HTML
+                                Then I can include them in the "base template" using Django
+    
+    Create 2 files in the includes folder/directory:
+        main-nav.html
+        mobile-top-header.html
+
+
+-- Added html snippet to -> mobile-top-header.html
+35. 
+
+
+-- Added html snipper to -> main-nav.html
+36.
+
+
+-- After adding html snippets
+37. Now I have to "include" them into the "base template"
+    *** Place this 
+    -> {% include 'includes/mobile-top-header.html' %} --> Mobile version of the Top Header
+        {% include 'includes/main-nav.html' %}
+
+
+-- Run project to see changes
+38.
+
+
+-- Add another row to the header for the banner
+40. With a template variable called "free_shipping_threshold"
+    --> Added css class to the base.css file
+
+
+Product App
+
+-- Copy over images to media folder
+
+-- To create Products app: python3 manage.py startapp Products
+    *** Don't forget to add to "settings.py":
+        Navigate to "settings.py" and then include app 'products',
+
+    Inside the "products" app I need to make a folder called "fixtures"
+        "fixtures" are used to load data very quickly into a Django database
+        to avoid me having to do it manually in the admin console.
+        To do this I can drop .JSON fixture files into the directory of "fixtures"
+        Example: "categories.json"
+                    "products.json"
+        *** These will be used to create all of the products for my store
+
+
+With the fixture files copied over and the product app created: 
+    I need to create some "models" for the fixtures to go in to...
+        "models.py"
+
+** Starting with "categories" to give the products a category.
+    Create a class called: Category(models.Model): --> See models.py
+
+    Create a string method -> see models.py
+
+
+41. --> pip3 install pillow in order for me to use the image field
+
+
+42. Registering the "Product Model" & "Category" in "admin.py"
+
+    from django.contrib import admin
+    from .models import Product, Category
+    --> Register your models here. <--
+    admin.site.register(Product)
+    admin.site.register(Category)
+
+
+*** Necessary for launching ***
+43. Using the fixtures with a NEW - python manage.py command
+    --> python3 manage.py loaddata categories (start with categories because the products need to know which categories to go into)
+    --> python3 manage.py loaddata products
+
+
+44. Setting up views for the products in "views.py"
