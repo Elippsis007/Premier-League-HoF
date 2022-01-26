@@ -9,8 +9,8 @@
           "price":77.99,
           "category":1,
           "rating":4.6,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0709201205510679M.jpg"
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/arsenal-home-shirt-2021-22.jpg",
+          "image":"arsenal-home-shirt-2021-22.jpg"
        }
     },
     {
@@ -18,13 +18,13 @@
        "model":"products.product",
        "fields":{
           "sku":"pp5001600425",
-          "name":"Liz Claiborne Audra Classic Fit Straight Leg Pants",
-          "description":"Straight-leg styling and on-the-job comfort make our Audra pants a flattering business decision. flat front zip fly with hook-and-bar closure 2 front and 2 back welt pockets 34 1/2\" inseam polyester/rayon/spandex washable imported",
-          "price":58.99,
-          "category":4,
-          "rating":4.6,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0113201617034987M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0113201617034987M.jpg"
+          "name":"Aston Villa Home Kit 2021-2022",
+          "description":"Show your pride and support on or off the pitch with the Aston Villa home shirt. Featuring Hydro-Way Protection tech and a regular fit for greater day to day comfort it also features all the classic detailing youd expect from Villas own home shirt, great whether youre playing the game yourself or just cheering the team on at Villa Park.",
+          "price":75.20,
+          "category":1,
+          "rating":4.4,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/aston-villa-home-shirt-2021-22.jpg",
+          "image":"aston-villa-home-shirt-2021-22.jpg"
        }
     },
     {
@@ -32,13 +32,13 @@
        "model":"products.product",
        "fields":{
           "sku":"pp5001730010",
-          "name":"Royal Velvet Matte Satin Square 3-pc. Coverlet Set",
-          "description":"Add a 5-star resort feel to your bedroom with the elegant Matte Satin Square coverlet set, featuring modern embroidered squares and flanged trim.  square embroidered pattern flanged-edge trim fabric is washable for easy care 3-piece set includes: coverlet 2 shams Polyester coverlet with cotton fill; polyester shams. Washable. Imported. Full/Queen: coverlet is 92x96\" King: coverlet is 110x96\"",
-          "price":205.99,
-          "category":2,
-          "rating":4.7,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1230201417013175M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1230201417013175M.jpg"
+          "name":"Brentford Home Kit 2021-2022",
+          "description":"Creating a traditional and synonymous Brentford red and white stripe kit with the addition of the fully striped sleeve.",
+          "price":49.99,
+          "category":1,
+          "rating":4.0,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/brentford-home-football-shirt.jpg",
+          "image":"brentford-home-football-shirt.jpg"
        }
     },
     {
@@ -46,55 +46,55 @@
        "model":"products.product",
        "fields":{
           "sku":"pp5001890157",
-          "name":"Gibson Infinite Glaze 16-pc. Dinnerware Set",
-          "description":"An exhibition in contrast, this dinnerware sets simple, clean design is perfect for both everyday use and special occasions. durable stoneware construction microwave and oven safe service for 4 16-piece set includes: four 10\" dinner plates four 7\" dessert plates four 6\" bowls four 12-ounce mugs Stoneware. Dishwasher safe. Imported.",
-          "price":169.99,
-          "category":7,
-          "rating":3.0,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0716201503423610M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0716201503423610M.jpg"
+          "name":"Brighton Home Kit 2021-2022",
+          "description":"The official 2021/22 Brighton and Hove Albion Home Shirt from Nike sees a traditional style blue and white striped shirt with a white v-neck collar and with a gold swoosh, striped on the sleeves with a yellow stripe down the sides of the shirt, combined with modern shirt technology, featuring light weight materials for comfort and performance.",
+          "price":96.99,
+          "category":1,
+          "rating":4.0,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/brighton-home-football-shirt.jpg",
+          "image":"brighton-home-football-shirt.jpg"
        }
     },
     {
-       "pk":5,
-       "model":"products.product",
-       "fields":{
-          "sku":"pp5002111605",
-          "name":"Simply Calphalon Enameled Cast Iron Panini Pan",
-          "description":"Durable enameled cast iron construction allows the panini pan to heat evenly, so you can whip up a meal with ease and complete confidence.  cooks with little to no oils or fats so every recipe is healthier nonstick interior for quick and easy clean-ups stainless steel knob on cover enameled cast iron heats evenly and consistently stove, broiler and oven safe Cast iron/stainless steel. Dishwasher safe. Imported. ",
-          "price":232.99,
-          "category":7,
-          "rating":5.0,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1115201210371197C.jpg"
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001890157",
+           "name":"Burnley Home Kit 2021-2022",
+           "description":"Home shirt as worn when the Clarets endured a horror start to the season during which they seemed destined for relegation, but thanks to a couple of giant-killing away wins at the Emirates and Anfield, Sean Dyche's outfit climbed the table and held onto their top-flight status, ending the campaign in 17th",
+           "price":96.99,
+           "category":1,
+           "rating":4.0,
+           "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/burnley-home-football-shirt.jpg",
+           "image":"burnley-home-football-shirt.jpg"
        }
     },
     {
-       "pk":6,
-       "model":"products.product",
-       "fields":{
-          "sku":"pp5002260206",
-          "name":"The Foundry Supply Co. Solid Pocket TeeBig & Tall",
-          "description":"Get a better basic tee in a size that truly fits with this pocket t-shirt from The Foundry Supply Co.  short-sleeve, crew-neck tee left chest pocket 100% cotton washable imported",
-          "price":30.99,
-          "category":9,
-          "rating":4.7,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0624201520422666C.jpg"
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001890157",
+           "name":"Chelsea Home Kit 2021-2022",
+           "description":"Ensure you are ready to cheer on The Blues throughout the 21/22 season with this Chelsea Home Shirt which benefits from being crafted with Nike Breathe fabric and Dri-FIT technology which delivers the perfect combination of moisture wicking comfort and cooling breathability to keep you both dry and comfortable. The jersey utilises the clubs traditional blue with contrasting yellow trim to deliver a look which was made famous throughout the 70s, while the team crest and Nike Swoosh branding completes the designed perfect for any fan of the Stamford Bridge club.",
+           "price":109.99,
+           "category":1,
+           "rating":5.0,
+           "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/burnley-home-football-shirt.jpg",
+           "image":"burnley-home-football-shirt.jpg"
        }
     },
     {
-       "pk":7,
-       "model":"products.product",
-       "fields":{
-          "sku":"pp5002440521",
-          "name":"Liz Claiborne Classic Sophie Secretly Slender Trouser Leg Pants - Plus",
-          "description":"Walk a little taller in our slimming straight-leg pants. flat front slim fit straight leg front fly with nylon zipper, hook and bar closure 32\" inseam polyester/rayon/spandex washable imported ",
-          "price":59.0,
-          "category":4,
-          "rating":4.4,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0226201317034754M.jpg"
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001890157",
+           "name":"Crystal Palace Home Kit 2021-2022",
+           "description":"Show your support for the Eagles, from the turf to the terraces, in this men's Crystal Palace FC 2021/22 Home Shirt from PUMA. Reppin' the iconic Crystal Palace home red and blue stripes, this shirt is made from durable polyester for a light, comfy wear whenever you pull it on. It features sweat-wicking tech to keep you dry, with breathable mesh panelling to the nape to keep you cool when the game heats up. With short sleeves and a v-neckline in a standard-fit for unrestricted movement, this shirt is finished up with the club sponsors, PUMA logo and Crystal Badge to the chest, with 'Eagles' on the nape to show your pride.",
+           "price":89.99,
+           "category":1,
+           "rating":3.5,
+           "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/crystal-palace-home-shirt-21-22.jpg",
+           "image":"crystal-palace-home-shirt-21-22.jpg"
        }
     },
     {
@@ -102,13 +102,13 @@
        "model":"products.product",
        "fields":{
           "sku":"pp5002601115",
-          "name":"Rachael Ray Ceramic Olive Oil Dispenser",
-          "description":"This olive oil dispenser is designed for storing extra virgin olive oil, so it's close at hand for drizzling on food.  24-ounce capacity cruet opaque bottle and non-porous glazed interior keep oil in the dark to avoid oxidation and preserve taste playful, contemporary design Stoneware. Dishwasher-safe. Imported.",
-          "price":36.99,
-          "category":7,
+          "name":"Everton Home Kit 2021-2022",
+          "description":"Take to the pitch like your heroes in the official home kit of Everton for the 2021-22 season. The shirt's design is inspired by naval 'Dazzle' camouflage from the First World War, much of the application of which was done in Liverpool's dry docks, making it much harder for the enemy to estimate a vessel's speed, range and heading. The patterning of the shirt echoes that proud chapter of Liverpool's history and contribution to the war effort.",
+          "price":75.99,
+          "category":1,
           "rating":4.5,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0926201317071162M.jpg"
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/everton-home-shirt-21-22.jpg",
+          "image":"everton-home-shirt-21-22.jpg"
        }
     },
     {
