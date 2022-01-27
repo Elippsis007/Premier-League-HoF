@@ -106,16 +106,16 @@ WSGI_APPLICATION = 'pl_hof.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    #'default': dj_database_url.parse('postgres://cgngmjptoxxraj:fdd012b5c6f1b988e8c6c52afc51ccfadb4eb98f124e50eb80b3b398308ff122@ec2-54-220-243-77.eu-west-1.compute.amazonaws.com:5432/d6nnsq4i9tuv17')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse('postgres://cgngmjptoxxraj:fdd012b5c6f1b988e8c6c52afc51ccfadb4eb98f124e50eb80b3b398308ff122@ec2-54-220-243-77.eu-west-1.compute.amazonaws.com:5432/d6nnsq4i9tuv17')
+# }
 
 
 # Password validation

@@ -1,0 +1,296 @@
+[
+    {
+       "pk":1,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001340155",
+          "name":"Arsenal Home Kit 2021-2022",
+          "description":"Be match day ready and cheer on The Gunners throughout the 2021/22 season with the Arsenal Home Shirt by adidas which benefits from being developed with Aeroready technology which maximises comfort by boosting breathability and wicking sweat away from the skin. The jersey features the clubs crest embroidered to the chest which allows you to showcase your support for The Gunners with pride, while the regular fit shirt features adidas branding to complete the look.",
+          "price":77.99,
+          "category":1,
+          "rating":4.6,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/arsenal-home-shirt-2021-22.jpg",
+          "image":"arsenal-home-shirt-2021-22.jpg"
+       }
+    },
+    {
+       "pk":2,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001600425",
+          "name":"Aston Villa Home Kit 2021-2022",
+          "description":"Show your pride and support on or off the pitch with the Aston Villa home shirt. Featuring Hydro-Way Protection tech and a regular fit for greater day to day comfort it also features all the classic detailing youd expect from Villas own home shirt, great whether youre playing the game yourself or just cheering the team on at Villa Park.",
+          "price":75.20,
+          "category":1,
+          "rating":4.4,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/aston-villa-home-shirt-2021-22.jpg",
+          "image":"aston-villa-home-shirt-2021-22.jpg"
+       }
+    },
+    {
+       "pk":3,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001730010",
+          "name":"Brentford Home Kit 2021-2022",
+          "description":"Creating a traditional and synonymous Brentford red and white stripe kit with the addition of the fully striped sleeve.",
+          "price":49.99,
+          "category":1,
+          "rating":4.0,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/brentford-home-football-shirt.jpg",
+          "image":"brentford-home-football-shirt.jpg"
+       }
+    },
+    {
+       "pk":4,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5001890157",
+          "name":"Brighton Home Kit 2021-2022",
+          "description":"The official 2021/22 Brighton and Hove Albion Home Shirt from Nike sees a traditional style blue and white striped shirt with a white v-neck collar and with a gold swoosh, striped on the sleeves with a yellow stripe down the sides of the shirt, combined with modern shirt technology, featuring light weight materials for comfort and performance.",
+          "price":96.99,
+          "category":1,
+          "rating":4.0,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/brighton-home-football-shirt.jpg",
+          "image":"brighton-home-football-shirt.jpg"
+       }
+    },
+    {
+        "pk":5,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001890157",
+           "name":"Burnley Home Kit 2021-2022",
+           "description":"Home shirt as worn when the Clarets endured a horror start to the season during which they seemed destined for relegation, but thanks to a couple of giant-killing away wins at the Emirates and Anfield, Sean Dyche's outfit climbed the table and held onto their top-flight status, ending the campaign in 17th",
+           "price":96.99,
+           "category":1,
+           "rating":4.0,
+           "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/burnley-home-football-shirt.jpg",
+           "image":"burnley-home-football-shirt.jpg"
+       }
+    },
+    {
+        "pk":6,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001890157",
+           "name":"Chelsea Home Kit 2021-2022",
+           "description":"Ensure you are ready to cheer on The Blues throughout the 21/22 season with this Chelsea Home Shirt which benefits from being crafted with Nike Breathe fabric and Dri-FIT technology which delivers the perfect combination of moisture wicking comfort and cooling breathability to keep you both dry and comfortable. The jersey utilises the clubs traditional blue with contrasting yellow trim to deliver a look which was made famous throughout the 70s, while the team crest and Nike Swoosh branding completes the designed perfect for any fan of the Stamford Bridge club.",
+           "price":109.99,
+           "category":1,
+           "rating":5.0,
+           "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/burnley-home-football-shirt.jpg",
+           "image":"burnley-home-football-shirt.jpg"
+       }
+    },
+    {
+        "pk":7,
+        "model":"products.product",
+        "fields":{
+           "sku":"pp5001890157",
+           "name":"Crystal Palace Home Kit 2021-2022",
+           "description":"Show your support for the Eagles, from the turf to the terraces, in this men's Crystal Palace FC 2021/22 Home Shirt from PUMA. Reppin' the iconic Crystal Palace home red and blue stripes, this shirt is made from durable polyester for a light, comfy wear whenever you pull it on. It features sweat-wicking tech to keep you dry, with breathable mesh panelling to the nape to keep you cool when the game heats up. With short sleeves and a v-neckline in a standard-fit for unrestricted movement, this shirt is finished up with the club sponsors, PUMA logo and Crystal Badge to the chest, with 'Eagles' on the nape to show your pride.",
+           "price":89.99,
+           "category":1,
+           "rating":3.5,
+           "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/crystal-palace-home-shirt-21-22.jpg",
+           "image":"crystal-palace-home-shirt-21-22.jpg"
+       }
+    },
+    {
+       "pk":8,
+       "model":"products.product",
+       "fields":{
+          "sku":"pp5002601115",
+          "name":"Everton Home Kit 2021-2022",
+          "description":"Take to the pitch like your heroes in the official home kit of Everton for the 2021-22 season. The shirt's design is inspired by naval 'Dazzle' camouflage from the First World War, much of the application of which was done in Liverpool's dry docks, making it much harder for the enemy to estimate a vessel's speed, range and heading. The patterning of the shirt echoes that proud chapter of Liverpool's history and contribution to the war effort.",
+          "price":75.99,
+          "category":1,
+          "rating":4.5,
+          "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/everton-home-shirt-21-22.jpg",
+          "image":"everton-home-shirt-21-22.jpg"
+       }
+    },
+    {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002601115",
+         "name":"Leeds Home Kit 2021-2022",
+         "description":"Pure Leeds United FC. When adidas designed this Leeds United home football jersey, they went for clean and classic, with a modern twist. Yellow and blue details taken from the club's badge include a Leeds United signoff under the back collar. The soft, textured fabric joins forces with moisture-absorbing AEROREADY to ensure a comfortable wear whenever you feel like showing off your colours. Our official sleeve partner BOXT features on the left sleeve, while our principal sponsor SBOTOP features on the front.",
+         "price":86.99,
+         "category":1,
+         "rating":4.5,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/leeds-home-shirt-21-22.jpg",
+         "image":"leeds-home-shirt-21-22.jpg"
+      }
+   },
+    {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002701115",
+         "name":"Leicester Home Kit 2021/2022",
+         "description":"Welcome in the latest chapter at King Power Stadium in our 2021/22 home colours. 2021/22 brings an authentic and unique design, featuring luxe detailing such as a ribbed V-neck, sleeve taping and gold accents.",
+         "price":58.99,
+         "category":1,
+         "rating":4.4,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/leicester-city-home-shirt-2021-22.jpg",
+         "image":"leicester-city-home-shirt-2021-22.jpg"
+      }
+   },
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002761055",
+         "name":"Liverpool Home Kit 2021/2022",
+         "description":"This LFC Home Shirt for the 21/22 season by Nike will keep you supporting The Reds in comfort thanks to the Nike Breathe fabric and DriFit technology which delivers the perfect combination of moisture wicking comfort and cooling breathability. The jersey comes with contrasting trims, while the team crest and Nike Swoosh branding completes the look styled on what your heroes will be wearing when gracing the Anfield pitch.",
+         "price":74.99,
+         "category":1,
+         "rating":5.2,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/lfc-jersey-21-22.jpg",
+         "image":"lfc-jersey-21-22.jpg"
+      }
+   },
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002820069",
+         "name":"Manchester City Home Kit 2021/2022",
+         "description":"Celebrate the 10th anniversary of the 2011/12 season. The Manchester City Home Replica shirt is ideal to add to any ManCity collection. Featuring the shirt of the 2021-22 kit, this shirt is sure to show-off your Man City pride wherever you go.",
+         "price":69.99,
+         "category":1,
+         "rating":5.0,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/man-city-home-shirt.jpg",
+         "image":"man-city-home-shirt.jpg"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002820147",
+         "name":"Manchester United Home Kit 2021/2022",
+         "description":"Youth. Courage. Success. The three pillars of Manchester United's motto have brought the club more than a century of triumphs. With its clean red design and white ribbed crewneck, this adidas authentic football jersey takes inspiration from the iconic kit that carried them to some of their most memorable moments. Built to perform on the pitch, it combines cooling HEAT.RDY with lightweight details. A devil sign-off on the back shows your pride. This product is made with Primegreen, a series of high-performance recycled materials.",
+         "price":74.99,
+         "category":1,
+         "rating":5.0,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/manchester-2021-22.jpg",
+         "image":"manchester-2021-22.jpg"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002910572",
+         "name":"Newcastle Home Kit 2021/2022",
+         "description":"The jersey features the clubs crest embroidered to the chest to assist the iconic black and white stripes to ensure you can show that your heart belongs to St James' Park with pride, whereas the Castore branding completes the on-pitch look.",
+         "price":94.99,
+         "category":1,
+         "rating":5.0,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/newcastle-home-shirt-21-22.jpg",
+         "image":"newcastle-home-shirt-21-22.jpg"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5002990740",
+         "name":"Norwich Home Kit 2021/2022",
+         "description":"Norwich City are delighted to reveal our Joma home kit for the 2021-22 Premier League season. This season’s home kit design features a nod to our famous ‘Canaries’ nickname with a green sleeve pattern inspired by the wings of the canary on our club crest. Other detailing, across the predominantly yellow body, include a green panel across the top of the shoulders and a vertical strip under each arm down to the hip.",
+         "price":58.99,
+         "category":1,
+         "rating":4.7,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/norwich-home-football-shirt.jpg",
+         "image":"norwich-home-football-shirt.jpg"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5003050248",
+         "name":"Southampton Home Kit 2021/2022",
+         "description":"This Southampton Home Shirt for the 2021/22 season has been crafted with Eco8 material which is high-tech polyester fabric made up of eight recycled plastic bottles and benefits from deliver fast-drying moisture management to keep you feeling fresh and focused on and off the pitch.",
+         "price":65.99,
+         "category":1,
+         "rating":3.5,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/southampton-home-shirt-21-22.jpg",
+         "image":"southampton-home-shirt-21-22.jpg"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5003070787",
+         "name":"Tottenham Home Kit 2021/2022",
+         "description":"This Spurs Home Shirt for the 20/21 season has been developed with Nike Breathe fabric and Dri-Fit technology which combines moisture management with cooling breathability to maximise comfort, while the all-over graphic print delivers a 90s inspired look and the team crest allows you to showcase your support for the North London club.",
+         "price":84.99,
+         "category":1,
+         "rating":4.4,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/tottenham-home-shirt.jpg",
+         "image":"tottenham-home-shirt.jpg"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5003090182",
+         "name":"Watford Home Kit 2021/2022",
+         "description":"Teamwork and the desire to do better have been the mainstays throughout our history. Today after more than 40 years in sport, we are still on the pitch, supporting those who never give up.",
+         "price":59.99,
+         "category":1,
+         "rating":5.8,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/watford-home-football-shirt.jpg",
+         "image":"watford-home-football-shirt.jpg"
+      }
+   },
+   {
+      "pk":19,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5003090186",
+         "name":"West Ham Home Kit 2021/2022",
+         "description":"This WHUFC Home Shirt for the 2021/22 season has been crafted with technical performance fabric which keeps you feeling fresh and comfortable by enhancing breathability and delivering fast drying moisture management. The jersey features the club crest embroidered to the chest which assists the iconic claret and blue to ensure you can show your support for The Hammers with pride and the Umbro branding completes the on-pitch look.",
+         "price":74.99,
+         "category":1,
+         "rating":4.5,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/west-ham-home-shirt.jpg",
+         "image":"west-ham-home-shirt.jpg"
+      }
+   },
+   {
+      "pk":20,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5003161326",
+         "name":"Wolves Home Kit 2021/2022",
+         "description":"Be Part Of the Pack, with the 2021-22 Wolves Home Shirt and show your pride on the street and in the stands. Featuring detailed colour matching and dyeing to be true Wolves Gold and bring it back home to the club and fans. A matte shine fabric to the reverse emulates flow and movement on the pitch. Contrast colour side panels for a modern impactful look.",
+         "price":85.99,
+         "category":1,
+         "rating":4.7,
+         "image_url":"https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/wolves-home-football-shirt.jpg",
+         "image":"wolves-home-football-shirt.jpg"
+      }
+   },
+   {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "pp5003230723",
+        "name": "Alan Shearer Autographed Photo",
+        "description": "Alan Shearer",
+        "price": 279.99,
+        "category": 2,
+        "rating": 5.0,
+        "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/AlanShearerNewcastle500x400_384x384.png",
+        "image": "0900631B81D676AEM.jpg"
+      }
+    },
+]
