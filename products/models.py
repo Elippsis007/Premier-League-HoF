@@ -13,6 +13,12 @@ class Category(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+        
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
     # Takes in the category model (above) itself.
     # And simply returns self.name
     # Basically this returns the Category Name
