@@ -25,6 +25,19 @@ body {
     width: 1.5rem;
 }
 
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #ff015b;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
 /* This is to maintain consistency with the LOGO font when I call attention to something */
 .logo-font {
     color: #37003c!important;

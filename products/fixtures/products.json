@@ -284,13 +284,13 @@
       "model": "products.product",
       "fields": {
         "sku": "pp5003230723",
-        "name": "Alan Shearer Autographed Photo",
+        "name": "Alan Shearer Autographed Photo/Montage",
         "description": "Alan Shearer",
         "price": 99.99,
         "category": 2,
         "rating": 5.0,
-        "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/AlanShearerNewcastle500x400_384x384.jpg",
-        "image": "0900631B81D676AEM.jpg"
+        "image_url": "",
+        "image": ""
       }
     }
 ]
