@@ -289,8 +289,8 @@
         "price": 99.99,
         "category": 2,
         "rating": 5.0,
-        "image_url": "",
-        "image": ""
+        "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/AlanShearerEnglandMontage500x400_576x576.jpg",
+        "image": "AlanShearerEnglandMontage500x400_576x576.jpg"
       }
     }
 ]
