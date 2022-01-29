@@ -23,7 +23,7 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Jerseys</a>
+                <a href="{% url 'products' %}?category=jerseys" class="dropdown-item">Premier League Jerseys</a>
             </div>
         </li>
 
@@ -32,18 +32,18 @@
                 Specialty Items
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specialty_items-link">
-                <a href="" class="dropdown-item">Autographed Photos</a>
-                <a href="" class="dropdown-item">PL Memorabilia</a>
-                <a href="" class="dropdown-item">All Special Items</a>
+                <a href="{% url 'products' %}?category=autographed_photos" class="dropdown-item">Autographed Photos</a>
+                <a href="{% url 'products' %}?category=pl_memorabilia" class="dropdown-item">PL Memorabilia</a>
+                <a href="{% url 'products' %}?category=autographed_photos,pl_memorabilia" class="dropdown-item">All Special Items</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'products' %}?category=special_offers" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
             </div>
         </li>
 
