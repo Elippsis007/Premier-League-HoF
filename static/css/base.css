@@ -93,6 +93,23 @@ body {
     /* -1 means that the white color for the background will sit behind all of the site content */
 }
 
+a.category-badge {
+    color: #37003c;
+}
+
+a.category-badge > span.badge:hover {
+    background: #37003c !important;
+    color: #fff !important;
+}
+
+.border-dark {
+    border-color: #37003c!important;
+}
+
+.border {
+    border: 2px solid #37003c!important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
