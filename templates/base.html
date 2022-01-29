@@ -91,11 +91,11 @@
                             {% endif %}
                         </div>
                     </li>
-                     <!-- This is the shopping cart link, it basically contains a fontawesome icon -->
+                     <!-- This is the shopping bag link, it basically contains a fontawesome icon -->
                      <li class="list-inline-item">
-                        <!-- This template variable applies classes if there is something in the cart the font will be bold
+                        <!-- This template variable applies classes if there is something in the bag the font will be bold
                                 and if there not it will be normal text -->
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="fa_shopping_cart my-0 cart_total">
