@@ -15,6 +15,39 @@ def add_to_bag(request, item_id):
     quantity = int(request.POST.get('quantity'))
 # I want to get the redirect URL from the form so I know where to redirect once the process is finished
     redirect_url = request.POST.get('redirect_url')
+    # Adding size equal to None at first then if product size is in request.post it will be set equal to that request.
+    size = None
+    if 'product_size' in request.POST:
+        size = request.POST['product_size']
+    bag = request.session.get('bag', {})
+
+    # This is an if statement to see if the product with 'sizes' is being added to the cart
+    # If items are not already in the bag the user just has to add it.
+    if size:
+        # If the item is already in the bag then there is a check to see if the same 'id' and same 'size'
+        # already exist
+        if item_id in list(bag.keys()):
+            if size in bag[item_id]['items_by_size'].keys():
+    # If it is the case then the qty is increased for that size and otherwise set to equal to the qty as the item exists in the bag
+                bag[item_id]['items_by_size'][size] += quantity
+            else:
+                bag[item_id]['item_by_size'][size] = quantity
+        else:
+            # A dictionary with a key of 'items_by_size' for the case that if there are multiple
+            # items with the same 'item_id' but when there are diffirent sizes
+            bag[item_id] = {'items_by_size': {size: quantity}}
+    # if there is no size I can run the following
+    else:
+
+        if item_id in list(bag.keys()):
+            bag[item_id] += quantity
+        else:
+            bag[item_id] = quantity
+    
+    request.session['bag'] = bag
+    return redirect(redirect_url)
+    
+
 # A session allows information to be stored until the client and server are done communicating.
 # Allowing me to store the contents in the shopping bag while in the HTTP session while a user browses the site and adds
 # items to be purchased, without the fear of losing all items in the bag.
