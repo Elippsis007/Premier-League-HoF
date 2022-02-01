@@ -15,6 +15,35 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
+/* Text Stylings */
+
+.quote {
+    color: burlywood;
+}
+
+.hof_p {
+    line-height: 37px;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: xx-large;
+}
+
+td {
+    color: #37003c;
+}
+
+.num {
+    color: burlywood;
+}
+
 /* from Bulma --> Ensures tht when I use FontAwesome icons, they will always stay perfectly centered and 
     and consistent in their sizes */ 
 .icon {
