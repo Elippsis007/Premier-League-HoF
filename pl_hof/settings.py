@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'bag',
     'hof',
     'checkout',
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +63,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'pl_hof.urls'
+
+CRISPY_TEMPLATE_PACK = 'boostrap4'
 
 TEMPLATES = [
     {
@@ -77,6 +82,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
