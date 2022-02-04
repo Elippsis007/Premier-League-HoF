@@ -1,4 +1,5 @@
-import uuid # Used to generate order number
+# Used to generate order number
+import uuid 
 
 from django.db import models
 from django.db.models import Sum
@@ -9,6 +10,8 @@ from products.models import Product
 # Create your models here.
 
 # Handles all orders accross the store
+
+
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -20,8 +23,9 @@ class Order(models.Model):
     street_address1 = models.CharField(max_length=80, null=False, blank=False)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
-    date = models.DateTimeField(auto_now_add=True) # Auto sets the order date and time when a new order is created
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+    date = models.DateTimeField(auto_now_add=True)
+    delivery_cost = models.DecimalField(max_digits=6, 
+    decimal_places=2, null=False, default=0)
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
@@ -45,6 +49,7 @@ class Order(models.Model):
         self.grand_total = self.order_total + self.delivery_cost
         self.save()
 
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
@@ -53,6 +58,7 @@ class Order(models.Model):
         if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
+
 
     def __str__(self):
         return self.order_number
@@ -65,7 +71,8 @@ class OrderLineItem (models.Model):
     product_size = models.CharField(max_length=2, null=True, blank=True) # XS, S, M, L, XL
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
-        
+
+
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the lineitem total
@@ -73,6 +80,7 @@ class OrderLineItem (models.Model):
         """
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
+
 
     def __str__(self):
         return f'SKU {self.product.sku} on order {self.order.order_number}'
