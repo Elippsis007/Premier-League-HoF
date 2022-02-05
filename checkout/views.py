@@ -1,19 +1,21 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+
 from .forms import OrderForm
 # Create your views here.
 
+
+# Getting the cart from the session
+# If nothing in the cart then we send the user a simple message
+# Return the user back to the products page, prevents users from manual trying to go to checkout with /checkout
 def checkout(request):
-    # Getting the cart from the session
     bag = request.session.get('bag', {})
-    # If nothing in the cart then we send the user a simple message
     if not bag:
         messages.error(request, "There's nothing in your cart at the moment")
-        # Return the user back to the products page, prevents users from manual trying to go to checkout with /checkout 
         return redirect(reverse('products'))
 
+
     order_form = OrderForm()
-    # Creating the template
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
