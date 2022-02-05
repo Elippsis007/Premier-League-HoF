@@ -4,9 +4,9 @@ from .forms import OrderForm
 # Create your views here.
 
 def checkout(request):
-    # Getting the bag from the session
+    # Getting the cart from the session
     bag = request.session.get('bag', {})
-    # If nothing in the bag then we send the user a simple message
+    # If nothing in the cart then we send the user a simple message
     if not bag:
         messages.error(request, "There's nothing in your cart at the moment")
         # Return the user back to the products page, prevents users from manual trying to go to checkout with /checkout 
