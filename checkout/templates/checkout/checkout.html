@@ -2,7 +2,6 @@
 {% load static %}
 {% load bag_tools %}
 
-
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
@@ -54,7 +53,7 @@
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
                         <div class="col-3 text-right">
-                            <p class="my-0 small text-muted">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
                 {% endfor %}
@@ -68,7 +67,7 @@
                     <div class="col-3">
                         <p class="my-0">${{ total | floatformat:2 }}</p>
                         <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                     </div>
                 </div>
             </div>
@@ -128,7 +127,7 @@
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span>Your card will be charged <strong>€{{ grand_total|floatformat:2 }}</strong></span>
+							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>
                 </form>
@@ -140,7 +139,6 @@
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ stripe_public_key|json_script:"id_client_secret" }}
+    {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
-
 {% endblock %}

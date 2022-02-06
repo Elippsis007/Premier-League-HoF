@@ -8,16 +8,13 @@ from bag.contexts import bag_contents
 import stripe
 
 
-# Getting the cart from the session
-# If nothing in the cart then we send the user a simple message
-# Return the user back to the products page, prevents users from manual trying to go to checkout with /checkout
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     bag = request.session.get('bag', {})
     if not bag:
-        messages.error(request, "There's nothing in your cart at the moment")
+        messages.error(request, "There's nothing in your bag at the moment")
         return redirect(reverse('products'))
 
     current_bag = bag_contents(request)
@@ -29,7 +26,6 @@ def checkout(request):
         currency=settings.STRIPE_CURRENCY,
     )
 
-
     order_form = OrderForm()
 
     if not stripe_public_key:
@@ -40,9 +36,7 @@ def checkout(request):
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
-        'client_secret': intent.clientsecret,
+        'client_secret': intent.client_secret,
     }
-
-    
 
     return render(request, template, context)
