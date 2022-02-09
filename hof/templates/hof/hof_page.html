@@ -12,9 +12,10 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="col text-center mt-4"><h2 class="logo-font">Premier League Hall of Fame</h2>  
+<div class="col text-center mt-5"><h2 class="logo-font">Premier League Hall of Fame</h2>  
     {% for hof in hof %}    
               <div class="row featurette mt-5">
+        
                 <div class="col-md-7">
                     <h2 class="featurette-heading">{{ hof.name }}</h2>
                       <p class="lead quote">{{ hof.quote }}</p>
@@ -30,61 +31,9 @@
                       
                     </div>
               </div>
+              <hr class="featurette-divider mt-5">
     {% endfor %}
 
-              <!-- <hr class="featurette-divider">
-
-              <div class="row featurette mt-5">
-              <div class="col-md-7 order-md-2">
-                  <h2 class="featurette-heading">Alan Shearer</h2>
-                  <p class="lead quote">“He’s a superb team player and an inspirational captain”</p>
-                    <p><span class="text-muted">Sir. Bobby Robson</span></p>
-                    <hr class="w-50">
-                    <p class="hof_p">
-                      If there was a ball and there was a goal, nothing could stop Alan Shearer.
-                      Not defenders, not distance, not great goalkeepers nor even the laws of physics sometimes. That was why he scored a record 260 of them in the Premier League.
-                      The call of home to play for his boyhood club Newcastle United made him a Geordie legend, but meant he lifted the Premier League Trophy just once.
-                      Some are scorers of great goals, some great scorers of goals. Shearer was both. He was the ultimate centre-forward, scoring from all angles, with his left foot, with his right foot and with his head and scoring with pace, power and technique.
-                      <hr class="w-50">
-                      
-                      <div class="col-sm-2">
-                      <table style="width:100%">
-                        <tr>
-                          <td>Appearances</td>
-                          <td>Goals</td>
-                          <td>Assists</td>
-                          <td>Titles</td>
-                          <td>Golden Boots</td>
-                        </tr>
-                        <tr>
-                          <td class="num">16</td>
-                          <td class="num">14</td>
-                          <td class="num">10</td>
-                          <td class="num">10</td>
-                          <td class="num">10</td>
-                        </tr>
-                      </table>
-                    </div>
-                    
-                    </p>
-                </div>
-                <div class="col-md-5">
-                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="200" src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/players/HOF-Nominees-Shearer3.jpg?raw=true" role="img">
-
-                </div>
-              </div>
-
-              <hr class="featurette-divider">
-
-              <div class="row featurette">
-                <div class="col-md-7">
-                  <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                  <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-                </div>
-                <div class="col-md-5">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-                </div>
-              </div>   -->
+              
 
 {% endblock %}
