@@ -258,6 +258,13 @@ a:hover {
     overflow-y: auto;
 }
 
+.hof_img {
+    vertical-align: middle;
+    border-style: solid;
+    border-color: burlywood;
+    border-width: thick;
+}
+
 
 /* -------------------------------- Media Queries */
 
