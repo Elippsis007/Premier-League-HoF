@@ -80,14 +80,14 @@
                                 <!-- Allows the user to to access link to Manage, Add, Delete products -->
                                     <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Locker</a> <!-- If Authenticated -->
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Locker</a> <!-- If Authenticated -->
                                 <!-- The "account_logout URL comes from the 'allauth' URLS in the Project Level URLS" -->
-                                <a href="" class="dropdown-item">Logout</a> <!-- If Authenticated -->
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a> <!-- If Authenticated -->
                             {% else %} <!-- If not Authenticated -->
                                 <!-- The "account_signup URL comes from the 'allauth' URLS in the Project Level URLS" -->
-                                <a href="" class="dropdown-item">Register</a> <!-- Display Register if they don't have an account -->
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a> <!-- Display Register if they don't have an account -->
                                  <!-- The "account_login URL comes from the 'allauth' URLS in the Project Level URLS" -->
-                                <a href="" class="dropdown-item">Login</a> <!-- Display Login if they don't have an account -->
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a> <!-- Display Login if they don't have an account -->
                             {% endif %}
                         </div>
                     </li>
@@ -143,7 +143,7 @@
                     {% elif level == 25 %}
                         {% include 'includes/toasts/toast_success.html' %}
                     {% else %}
-                        {% include 'includes/toasts/toasts_info.html' %}
+                        {% include 'includes/toasts/toast_info.html' %}
                     {% endif %}
                 {% endwith %}
             {% endfor %}
