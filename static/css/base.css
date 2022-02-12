@@ -31,6 +31,17 @@ p {
     margin-bottom: 2rem;
 }
 
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    font-size: xx-large;
+}
+
+th {
+    color: burlywood;
+}
+
 td {
     color: #37003c;
 }
