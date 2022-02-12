@@ -83,6 +83,18 @@
       "image": "Frank-Lampard.jpg"
     }
   }
+  {
+    "pk": 8,
+    "model": "hof.hof",
+    "fields": {
+      "name": "Steven Gerrard",
+      "quote": "To be filled",
+      "quotee": "To be filled",
+      "description": "After coming through Liverpool’s Academy, Steven Gerrard spent 17 years as the driving force of the Merseysiders’ midfield in the Premier League. Famed for his driving runs, his ability to inspire team-mates and his spectacular strikes from distance, only Frank Lampard has scored more from midfield than Gerrard's 120 goals. The Reds’ long-serving captain also provided 92 top-flight assists and won six monthly awards in his stellar career.",
+      "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Gerrard1.jpg?raw=true",
+      "image": "Gerrard1.jpg"
+    }
+  }
 ]
 
 
