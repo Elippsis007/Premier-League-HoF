@@ -11,49 +11,47 @@
 
 
 {% block content %}
-<div class="overlay"></div>
-<div class="col text-center mt-5"><h2 class="logo-font">Premier League Hall of Fame</h2>  
-    {% for hof in hof %}    
-              <div class="row featurette mt-5">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">{{ hof.name }}</h2>
-                      <p class="lead quote">"{{ hof.quote }}"</p>
-                        <p><span class="text-muted">{{ hof.quotee }}</span></p>
-                          <hr class="w-50">
-                            <p class="hof_p">
-                            {{ hof.description }}
-                            </p>
-                          <div class="order-history table-responsive">
-                              <table class="table table-sm table-borderless">
-                                  <thead>
-                                      <tr>
-                                          <th>{{ hof.app_head }}</th>
-                                          <th>{{ hof.goals_head }}</th>
-                                          <th>{{ hof.assists_head }}</th>
-                                          <th>{{ hof.titles_head }}</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
+    <div class="overlay"></div>
+      <div class="col text-center mt-5"><h2 class="logo-font">Premier League Hall of Fame</h2>  
+          {% for hof in hof %}    
+                    <div class="row featurette mt-5">
+                      <div class="col-md-7">
+                          <h2 class="featurette-heading">{{ hof.name }}</h2>
+                            <p class="lead quote">"{{ hof.quote }}"</p>
+                              <p><span class="text-muted">{{ hof.quotee }}</span></p>
+                                <hr class="w-50">
+                                  <p class="hof_p">
+                                  {{ hof.description }}
+                                  </p>
+                            <div class="order-history table-responsive">
+                                <table class="table table-sm table-borderless">
+                                    <thead>
                                         <tr>
-                                            <td>{{ hof.appearances }}</td>
-                                            <td>{{ hof.goals }}</td>
-                                            <td>{{ hof.assists }}</td>
-                                            <td>{{ hof.titles }}</td>
-                                          </tr>
-                                  </tbody>
-                              </table>
+                                            <th>{{ hof.app_head }}</th>
+                                            <th>{{ hof.goals_head }}</th>
+                                            <th>{{ hof.assists_head }}</th>
+                                            <th>{{ hof.titles_head }}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                          <tr>
+                                              <td>{{ hof.appearances }}</td>
+                                              <td>{{ hof.goals }}</td>
+                                              <td>{{ hof.assists }}</td>
+                                              <td>{{ hof.titles }}</td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                          <div class="col-md-5">
+                            
+                            <img class="hof_img bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="200" src="{{ hof.image.url }}" role="img">
+                            
                           </div>
-                  </div>
-                  
-                    <div class="col-md-5">
-                      
-                      <img class="hof_img bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="200" src="{{ hof.image.url }}" role="img">
-                      
                     </div>
-              </div>
-              <hr class="featurette-divider mt-5">
-    {% endfor %}
-
-              
-
+                    <hr class="featurette-divider mt-5">
+          {% endfor %}
+      </div>
 {% endblock %}
