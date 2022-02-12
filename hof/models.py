@@ -5,6 +5,10 @@ class Hof(models.Model):
     quote = models.CharField(max_length=254)
     quotee = models.CharField(max_length=254)
     description = models.TextField()
+    appearances = models.DecimalField(max_digits=6, null=True, blank=True)
+    goals = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    assists = models.DecimalField(max_digits=6, null=True, blank=True)
+    titles = models.DecimalField(max_digits=6, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
