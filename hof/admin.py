@@ -7,7 +7,7 @@ class HofAdmin(admin.ModelAdmin):
         'goals',
         'assists',
         'titles',
-    )
+        )
 
 # Register your models here.
 admin.site.register(Hof)
