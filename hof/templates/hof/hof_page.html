@@ -15,7 +15,6 @@
 <div class="col text-center mt-5"><h2 class="logo-font">Premier League Hall of Fame</h2>  
     {% for hof in hof %}    
               <div class="row featurette mt-5">
-        
                 <div class="col-md-7">
                     <h2 class="featurette-heading">{{ hof.name }}</h2>
                       <p class="lead quote">"{{ hof.quote }}"</p>
@@ -24,24 +23,22 @@
                             <p class="hof_p">
                             {{ hof.description }}
                             </p>
-                            <div class="order-history table-responsive">
+                          <div class="order-history table-responsive">
                               <table class="table table-sm table-borderless">
                                   <thead>
                                       <tr>
-                                          <th>APPEARANCES</th>
-                                          <th>GOALS</th>
-                                          <th>ASSISTS</th>
-                                          <th>TITLES</th>
-                                          <th>GOLDEN BOOTS</th>
+                                          <th>{{ hof.app_head }}</th>
+                                          <th>{{ hof.goals_head }}</th>
+                                          <th>{{ hof.assists_head }}</th>
+                                          <th>{{ hof.titles_head }}</th>
                                       </tr>
                                   </thead>
                                   <tbody>
-                                          <tr>
-                                              <td>{{ hof.appearances }}</td>
-                                              <td>{{ hof.goals }}</td>
-                                              <td>{{ hof.assists }}</td>
-                                              <td>{{ hof.titles }}</td>
-                                              <td>{{ hof.golden_boots }}</td>
+                                        <tr>
+                                            <td>{{ hof.appearances }}</td>
+                                            <td>{{ hof.goals }}</td>
+                                            <td>{{ hof.assists }}</td>
+                                            <td>{{ hof.titles }}</td>
                                           </tr>
                                   </tbody>
                               </table>
