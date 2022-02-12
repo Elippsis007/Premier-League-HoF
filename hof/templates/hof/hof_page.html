@@ -18,13 +18,36 @@
         
                 <div class="col-md-7">
                     <h2 class="featurette-heading">{{ hof.name }}</h2>
-                      <p class="lead quote">{{ hof.quote }}</p>
+                      <p class="lead quote">"{{ hof.quote }}"</p>
                         <p><span class="text-muted">{{ hof.quotee }}</span></p>
                           <hr class="w-50">
                             <p class="hof_p">
                             {{ hof.description }}
                             </p>
+                            <div class="order-history table-responsive">
+                              <table class="table table-sm table-borderless">
+                                  <thead>
+                                      <tr>
+                                          <th>APPEARANCES</th>
+                                          <th>GOALS</th>
+                                          <th>ASSISTS</th>
+                                          <th>TITLES</th>
+                                          <th>GOLDEN BOOTS</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                          <tr>
+                                              <td>{{ hof.appearances }}</td>
+                                              <td>{{ hof.goals }}</td>
+                                              <td>{{ hof.assists }}</td>
+                                              <td>{{ hof.titles }}</td>
+                                              <td>{{ hof.golden_boots }}</td>
+                                          </tr>
+                                  </tbody>
+                              </table>
+                          </div>
                   </div>
+                  
                     <div class="col-md-5">
                       
                       <img class="hof_img bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="200" src="{{ hof.image.url }}" role="img">

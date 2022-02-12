@@ -7,6 +7,11 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "Pace, power and grace. Henry gave Premier League defenders nightmares for eight seasons. Converted by Arsene Wenger from a winger to striker, he redefined forward play, starting on the left, but proving just as deadly closer to goal.",
+      "appearances": "258",
+      "goals": "174",
+      "assists": "74",
+      "titles": "2",
+      "golden boots": "4",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/players/Thierry-Henry.jpg?raw=true",
       "image": "Thierry-Henry.jpg"
     }
@@ -19,6 +24,11 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "If there was a ball and there was a goal, nothing could stop Alan Shearer. Not defenders, not distance, not great goalkeepers nor even the laws of physics sometimes. That was why he scored a record 260 of them in the Premier League. “He’s a superb team player and an inspirational captain,” said Bobby Robson, his inspirational manager at Newcastle. “As a player he is up there with the very best.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/HOF-Nominees-Shearer3.jpg?raw=true",
       "image": "HOF-Nominees-Shearer3.jpg"
     }
@@ -31,6 +41,11 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "Roy Keane was the fierce heartbeat of Manchester United's midfield and their domination of the Premier League in the 1990s. The tough-tackling Irishman joined from Nottingham Forest for a British-record fee in 1993 and was a leader in the United side, before becoming club captain in 1997. His energy and fighting spirit inspired his team-mates to seven titles during his time at the club.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Roy-Keane.jpg?raw=true",
       "image": "Roy-Keane.jpg"
     }
@@ -43,6 +58,11 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "Eric Cantona was a catalyst for Manchester United's dominance of the Premier League in the 1990s after his shock move from defending champions Leeds United early in the competition's inaugural 1992/93 campaign. Cantona helped United to end their 26-year title drought that year, and they were Premier League champions four times in five seasons at Old Trafford before his retirement in May 1997.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Eric-Cantona.jpg?raw=true",
       "image": "Eric-Cantona.jpg"
     }
@@ -55,6 +75,11 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "His right foot set the Premier League alight on the opening weekend of 1996/97, when he scored for Manchester United from the halfway line at Wimbledon. He tormented opponents with whipped, curling crosses that were impossible to defend and easy for team-mates to score as United claimed six titles with Beckham. And from free-kicks the winger scored 18 Premier League goals, a total no player has threatened.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/David-Beckham.jpg?raw=true",
       "image": "David-Beckham.jpg"
     }
@@ -67,6 +92,11 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "Dennis Bergkamp’s arrival in 1995 introduced the Premier League to a new level of skill that inspired Arsenal to three PL titles and opened the competition’s borders to more international stars. The Dutchman’s technical ability and eye for a pass gave the competition some of its most entertaining play. As well as providing gilt-edged chances for team-mates, Bergkamp scored some spectacular goals, including the strike against Newcastle United which was voted by fans as the best goal in the Premier League's first 25 years.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Dennis-Bergkamp.jpg?raw=true",
       "image": "Dennis-Bergkamp.jpg"
     }
@@ -79,18 +109,28 @@
       "quote": "To be filled",
       "quotee": "To be filled",
       "description": "Over the course of 21 seasons in the Premier League, Frank Lampard was one of the competition’s most complete midfielders. A champion on three occasions at Chelsea, no midfielder has ever got near to his 177 goals for the Blues, West Ham United and Manchester City. No player has matched his getting double figures for goals in 10 consecutive seasons as he became Chelsea’s all-time leading scorer. Named Player of the Season for 2004/05, he also surpassed a century of assists in the Premier League.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Frank-Lampard.jpg?raw=true",
       "image": "Frank-Lampard.jpg"
     }
-  }
+  },
   {
     "pk": 8,
     "model": "hof.hof",
     "fields": {
       "name": "Steven Gerrard",
-      "quote": "To be filled",
-      "quotee": "To be filled",
+      "quote": "HE WAS A WONDERFUL PLAYER, HE HAD EVERYTHING. YOU WOULDN’T WANT TO PLAY AGAINST HIM, YOU WOULDN’T WANT TO HAVE TO MARK HIM.",
+      "quotee": "GLENN HODDLE",
       "description": "After coming through Liverpool’s Academy, Steven Gerrard spent 17 years as the driving force of the Merseysiders’ midfield in the Premier League. Famed for his driving runs, his ability to inspire team-mates and his spectacular strikes from distance, only Frank Lampard has scored more from midfield than Gerrard's 120 goals. The Reds’ long-serving captain also provided 92 top-flight assists and won six monthly awards in his stellar career.",
+      "appearances": "441",
+      "goals": "260",
+      "assists": "64",
+      "titles": "1",
+      "golden_boots": "3",
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Gerrard1.jpg?raw=true",
       "image": "Gerrard1.jpg"
     }
