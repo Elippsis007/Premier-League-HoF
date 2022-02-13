@@ -379,3 +379,7 @@ With the fixture files copied over and the product app created:
 
 
 44. Setting up views for the products in "views.py"
+
+pip3 install dj_database_url
+
+pip3 install psycopg2-binary
