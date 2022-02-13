@@ -1,0 +1,1 @@
+web: gunicorn pl_hof.wsgi:application

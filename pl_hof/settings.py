@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2j980-7_-@=&#9*@b8ry@)6jd9nmth4qo1aq$xk*zm=e5anfwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['premier-league-hof.heroku,com', 'localhost']
 
 
 # Application definition
@@ -124,18 +124,18 @@ WSGI_APPLICATION = 'pl_hof.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-
-
-
-# DATABASES = {
-#     'default': dj_database_url.parse('postgres://cgngmjptoxxraj:fdd012b5c6f1b988e8c6c52afc51ccfadb4eb98f124e50eb80b3b398308ff122@ec2-54-220-243-77.eu-west-1.compute.amazonaws.com:5432/d6nnsq4i9tuv17')
-# }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation

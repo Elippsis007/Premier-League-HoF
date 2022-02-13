@@ -383,3 +383,5 @@ With the fixture files copied over and the product app created:
 pip3 install dj_database_url
 
 pip3 install psycopg2-binary
+
+pip3 install gunicorn
