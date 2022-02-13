@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2j980-7_-@=&#9*@b8ry@)6jd9nmth4qo1aq$xk*zm=e5anfwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['premier-league-hof.heroku,com', 'localhost']
+ALLOWED_HOSTS = ['premier-league-hof.heroku.com', 'localhost']
 
 
 # Application definition
@@ -133,7 +133,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
 
