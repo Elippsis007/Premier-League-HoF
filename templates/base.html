@@ -78,7 +78,7 @@
                             <!-- If the user is authenticated AND a SUPERUSER -->
                                 {% if request.user.is_superuser %}
                                 <!-- Allows the user to to access link to Manage, Add, Delete products -->
-                                    <a href="" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">Open Locker</a> <!-- If Authenticated -->
                                 <!-- The "account_logout URL comes from the 'allauth' URLS in the Project Level URLS" -->
