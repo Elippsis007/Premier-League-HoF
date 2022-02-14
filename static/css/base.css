@@ -5,7 +5,7 @@ html {
 
 body {
     /* Ensures the images stays put in the center of the page */
-    background: url('/media/background_image/pl_hof_background.jpg') no-repeat center center fixed; 
+    background: url('/background_image/pl_hof_background.jpg') no-repeat center center fixed; 
     background-size: cover;
     /* The eventual height of the top header */
     height:calc(100vh - 164px);
