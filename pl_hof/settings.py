@@ -93,6 +93,16 @@ TEMPLATES = [
     },
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
+AUTHENTICATION_BACKENDS = (
+    
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
 
 SITE_ID = 1
 
@@ -105,16 +115,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True # Will be required for the user to enter
 ACCOUNT_USERNAME_MIN_LENGTH = 4 # Specifies username characther length
 LOGIN_URL = '/accounts/login/' # Specifying a login url
 LOGIN_REDIRECT_URL = '/' # Specifying a url to redirect back to after user logging in.
-
-AUTHENTICATION_BACKENDS = [
-    
-    # Needed to login by username in Django admin, regardless of `allauth`
-    'django.contrib.auth.backends.ModelBackend',
-
-    # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
-    
-]
 
 
 WSGI_APPLICATION = 'pl_hof.wsgi.application'
@@ -186,12 +186,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Fri 13 Aug 2099 13:13:13 GMT',
-        'CacheControl': 'max-age=94608000', 
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
     }
 
-
-if 'USE_AWS' in os.environ:
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'premier-league-hof'
     AWS_S3_REGION_NAME = 'eu-west-1'
@@ -220,6 +218,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'hof@plhof.com'
 
 
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
