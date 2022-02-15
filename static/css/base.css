@@ -3,6 +3,7 @@ html {
     height: 100%;
 }
 
+
 body {
     /* Ensures the images stays put in the center of the page */
     background: url('/media/pl_hof_background.jpg') no-repeat center center fixed; 
