@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', 'aen5p_jfe3#ta_9u2m7rkgko*u9mmxm4we7d3c!5ots)ol40xo')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'TRUE' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['premier-league-hof.herokuapp.com', 'localhost']
 
@@ -79,7 +79,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -96,7 +96,6 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
-    
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
@@ -106,13 +105,13 @@ AUTHENTICATION_BACKENDS = (
 
 SITE_ID = 1
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # Tells allauth that we want to allow authentication using either usernames/emails
-ACCOUNT_EMAIL_REQUIRED = True # Tells that email is required for registering for the site
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory' # Mandatory for an email address
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True # Will be required for the user to enter their email twice upon registration to eliminate typos
-ACCOUNT_USERNAME_MIN_LENGTH = 4 # Specifies username characther length
-LOGIN_URL = '/accounts/login/' # Specifying a login url
-LOGIN_REDIRECT_URL = '/' # Specifying a url to redirect back to after user logging in.
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 
 WSGI_APPLICATION = 'pl_hof.wsgi.application'
@@ -122,10 +121,12 @@ WSGI_APPLICATION = 'pl_hof.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-        
     }
 else:
     DATABASES = {
@@ -173,14 +174,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-# Tells Django where all of my stat files are located
-# ****NEEDS TO BE CHANGED TO TUPLE****
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-# Adding these MEDIA paths which is where all uploaded media files will go
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 
 if 'USE_AWS' in os.environ:
     # Cache control
@@ -188,7 +185,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'premier-league-hof'
