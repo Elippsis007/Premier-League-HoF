@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'aen5p_jfe3#ta_9u2m7rkgko*u9mmxm4we7d3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['premier-league-hof.herokuapp.com', 'localhost']
 
 
 # Application definition
