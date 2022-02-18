@@ -65,6 +65,10 @@ td {
     color: #2d0031!important;
 }
 
+a.text-info:focus, a.text-info:hover {
+    color: #37003c!important;
+}
+
 .sb-logo-font {
     text-align: center;
 }
