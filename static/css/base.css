@@ -144,7 +144,7 @@ a:hover {
 .btn-outline-black {
     background: white;
     color: #37003c !important;
-    border: 2px solid #37003c;
+    border: 1px solid #37003c;
 }
 
 .btn-outline-black:hover,
@@ -327,7 +327,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #37003c; /* text-info */
 }
 
 /* Product Form */
@@ -383,7 +383,7 @@ input[name='q']::placeholder {
       }
   }
 
-  /* pad the top a bit when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -392,25 +392,25 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
-}
 
-.display-4.logo-font-text-black {
-    font-size: 2rem;
-}
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
 
-.nav-link {
-    padding: 0.15rem;
-}
+    .nav-link {
+        padding: 0.15rem;
+    }
 
-.nav-link i.fa-lg {
-    font-size: 1rem;
-}
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
 
-.navbar-toggler {
-    padding: .6rem .6rem;
-    font-size: 1reml
-}
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
 
-#delivery-banner h4 {
-    font-size: .9rem;
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
 }
