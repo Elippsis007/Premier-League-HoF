@@ -16,7 +16,7 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
-/* Text Stylings */
+/* Text & Table Stylings - HOF */
 
 .quote {
     color: burlywood;
@@ -51,58 +51,65 @@ td {
     color: burlywood;
 }
 
-/* from Bulma --> Ensures tht when I use FontAwesome icons, they will always stay perfectly centered and 
-    and consistent in their sizes */ 
+/* Text & Table Stylings - SB */
+
+td {
+    color: #555;
+}
+
+.text-info {
+    color: #37003c!important;
+}
+
+.text-info:hover {
+    color: #2d0031!important;
+}
+
+.sb-logo-font {
+    text-align: center;
+}
+
+/* from Bulma */
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: 2px solid #37003c;
+}
+
+.text-primary {
+    color: #37003c!important;
+}
+
+a.text-primary:focus, a.text-primary:hover {
+    color: #37003c!important;
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
 }
 
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #ff015b;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-}
-
-/* This is to maintain consistency with the LOGO font when I call attention to something */
 .logo-font {
-    color: #37003c!important;
     text-transform: uppercase;
 }
-/* Font Awesome Mobile */
 
-a#mobile-search {
+.main-logo-link {
+    width: fit-content;
+}
+
+.btn {
     color: #37003c;
 }
 
-a#user-options {
+.btn-black {
+    background: white;
     color: #37003c;
 }
 
-.fa-shopping-cart {
-    color: #37003c;
-}
-
-a#fa-shopping-cart {
-    color: #37003c;
-}
-
-.cart_total {
-    color: #37003c;
-}
-
-.fa-user {
-    color: #37003c;
+.btn-black:hover {
+    background: #37003c;
+    color: white;
 }
 
 a {
@@ -111,40 +118,11 @@ a {
 
 a:hover {
     color: #37003c;
-}
-
-/* This makes it so that the logo only takes up as much space as the text requires and no more */
-.main-logo-link {
-    width: fit-content;
-}
-
-.banner-font {
-    color: white;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-.bg-black {
-    background: #37003c;
-}
-
-.btn-black {
-    background:white;
-    color: #37003c;
-    border: 2px solid #37003c;
-}
-
-.btn-black:hover {
-    background: #37003c;
-    color: white;
+    text-decoration: none;
 }
 
 .btn-outline-black {
     background: white;
-    color: #37003c !important;
-    border: 1px solid #37003c;
 }
 
 .btn-outline-black:hover,
@@ -154,23 +132,35 @@ a:hover {
     color: white !important;
 }
 
+button {
+    margin: 1px;
+}
+
+.text-black {
+    color: #37003c !important;
+}
+
+/* .border-black {
+    border: 1px solid black !important;
+} */
+
+.bg-black {
+    background: #37003c !important;
+}
+
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
-    /* -1 means that the white color for the background will sit behind all of the site content */
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
-.border-dark {
-    border-color: #37003c!important;
-}
-
-.border {
-    border: 1px solid #37003c!important;
+a.category-badge > span.badge {
+    background: #37003c !important;
+    color: #fff !important;
 }
 
 .btt-button {
@@ -179,11 +169,6 @@ a:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
-}
-
-.badge:hover {
-    background: #37003c;
-    color: #fff;
 }
 
 .btt-link,
@@ -196,27 +181,47 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.custom-select {
-    cursor: pointer;
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #37003c;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
 }
 
-/* Toast Styling */
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #37003c;
+    text-decoration: none;
+    background-color: white;
+}
+
+.dropdown-item:focus, .dropdown-item {
+    color: #ff015b;
+    text-decoration: none;
+    background-color: white;
+}
+
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 99999999;
+    z-index: 99999999999;
 }
 
 .custom-toast {
-    overflow:visible;
+    overflow: visible;
 }
 
 .toast-capper {
     height: 2px;
 }
-
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -269,22 +274,24 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-.hof_img {
-    vertical-align: middle;
-    border-style: solid;
-    border-color: burlywood;
-    border-width: thick;
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem;
-    color: #6c757d;
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
-    border-color: #37003c;
+    border-color: #000;
     border-radius: 0;
 }
 
@@ -301,15 +308,15 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #37003c;
+    color: #fff;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #fff;
-    border-color: #37003c;
+    background-color: #000;
+    border: 1px solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -322,12 +329,12 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #37003c;
-    border-color: #37003c;
+    background-color: #222;
+    border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #37003c; /* text-info */
+	color: #17a2b8; /* text-info */
 }
 
 /* Product Form */
@@ -359,29 +366,20 @@ input[name='q']::placeholder {
 }
 
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
     }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
@@ -412,5 +410,81 @@ input[name='q']::placeholder {
 
     #delivery-banner h4 {
         font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        background-color: #37003c;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #37003c;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+}
+
+@media (max-width: 280px) {
+    
+    .display-4.logo-font.text-black {
+        font-size: 14px;
+    }
+
+    .h2, h2 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 14px;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 14px;
+    }
+
+    #delivery-banner h4 {
+        font-size: 14px;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        background-color: #37003c;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #37003c;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.3rem
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
