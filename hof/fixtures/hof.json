@@ -39,10 +39,10 @@
       "quote": "It was the most emphatic display of selflessness I have ever seen. Pounding over every blade of grass, competing if he would rather die of exhaustion than lose, he inspired all around him. I felt such an honour to be associated with him.",
       "quotee": "Sir Alex Ferguson",
       "description": "Roy Keane was the fierce heartbeat of Manchester United's midfield and their domination of the Premier League in the 1990s. The tough-tackling Irishman joined from Nottingham Forest for a British-record fee in 1993 and was a leader in the United side, before becoming club captain in 1997. His energy and fighting spirit inspired his team-mates to seven titles during his time at the club.",
-      "appearances": 441,
-      "goals": 260,
-      "assists": 64,
-      "titles": 1,
+      "appearances": 336,
+      "goals": 39,
+      "assists": 33,
+      "titles": 7,
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Roy-Keane.jpg?raw=true",
       "image": "Roy-Keane.jpg"
     }
@@ -84,13 +84,13 @@
     "model": "hof.hof",
     "fields": {
       "name": "Dennis Bergkamp",
-      "quote": "To be filled",
-      "quotee": "To be filled",
+      "quote": "An enormously talented footballer: intelligent, always drifting between the lines and with fantastic distribution. He really opens up doors.",
+      "quotee": "Tony Adams",
       "description": "Dennis Bergkamp’s arrival in 1995 introduced the Premier League to a new level of skill that inspired Arsenal to three PL titles and opened the competition’s borders to more international stars. The Dutchman’s technical ability and eye for a pass gave the competition some of its most entertaining play. As well as providing gilt-edged chances for team-mates, Bergkamp scored some spectacular goals, including the strike against Newcastle United which was voted by fans as the best goal in the Premier League's first 25 years.",
-      "appearances": 441,
-      "goals": 260,
-      "assists": 64,
-      "titles": 1,
+      "appearances": 315,
+      "goals": 87,
+      "assists": 94,
+      "titles": 3,
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Dennis-Bergkamp.jpg?raw=true",
       "image": "Dennis-Bergkamp.jpg"
     }
@@ -100,13 +100,13 @@
     "model": "hof.hof",
     "fields": {
       "name": "Frank Lampard",
-      "quote": "To be filled",
-      "quotee": "To be filled",
+      "quote": "Lamps is Lamps. When he plays well he is best in the game, when he plays bad, he is the second or the third best.",
+      "quotee": "Jose Mourinho",
       "description": "Over the course of 21 seasons in the Premier League, Frank Lampard was one of the competition’s most complete midfielders. A champion on three occasions at Chelsea, no midfielder has ever got near to his 177 goals for the Blues, West Ham United and Manchester City. No player has matched his getting double figures for goals in 10 consecutive seasons as he became Chelsea’s all-time leading scorer. Named Player of the Season for 2004/05, he also surpassed a century of assists in the Premier League.",
-      "appearances": 441,
-      "goals": 260,
-      "assists": 64,
-      "titles": 1,
+      "appearances": 609,
+      "goals": 117,
+      "assists": 102,
+      "titles": 3,
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Frank-Lampard.jpg?raw=true",
       "image": "Frank-Lampard.jpg"
     }
@@ -116,13 +116,13 @@
     "model": "hof.hof",
     "fields": {
       "name": "Steven Gerrard",
-      "quote": "HE WAS A WONDERFUL PLAYER, HE HAD EVERYTHING. YOU WOULDN’T WANT TO PLAY AGAINST HIM, YOU WOULDN’T WANT TO HAVE TO MARK HIM.",
-      "quotee": "GLENN HODDLE",
+      "quote": "The fans, they look only for forwards, always a forward. Somebody who scores. Sometimes you have a player like Gerrard. For me, for the last five years Gerrard has been the best player in the world.",
+      "quotee": "Pele",
       "description": "After coming through Liverpool’s Academy, Steven Gerrard spent 17 years as the driving force of the Merseysiders’ midfield in the Premier League. Famed for his driving runs, his ability to inspire team-mates and his spectacular strikes from distance, only Frank Lampard has scored more from midfield than Gerrard's 120 goals. The Reds’ long-serving captain also provided 92 top-flight assists and won six monthly awards in his stellar career.",
-      "appearances": 441,
-      "goals": 260,
-      "assists": 64,
-      "titles": 1,
+      "appearances": 504,
+      "goals": 120,
+      "assists": 92,
+      "titles": 0,
       "image_url": "https://github.com/Elippsis007/Premier-League-HoF/blob/main/media/Gerrard1.jpg?raw=true",
       "image": "Gerrard1.jpg"
     }
