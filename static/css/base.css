@@ -319,8 +319,8 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #37003c;
+    border: 1px solid #37003c;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -330,15 +330,8 @@ input[name='q']::placeholder {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
-}
-
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #37003c; /* text-info */
 }
 
 /* Product Form */
