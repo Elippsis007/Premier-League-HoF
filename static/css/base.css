@@ -6,10 +6,10 @@ html {
 
 body {
     /* Ensures the images stays put in the center of the page */
-    background: url('/media/pl_hof_background.jpg') no-repeat center center fixed; 
+    background: url('/media/pl_hof_background.jpg') no-repeat center center fixed;
     background-size: cover;
     /* The eventual height of the top header */
-    height:calc(100vh - 164px);
+    height: calc(100vh - 164px);
     /* Setting the font color for the website */
     color: #555;
     /* Setting the font for the website */
@@ -69,15 +69,16 @@ td {
 }
 
 .text-info {
-    color: #37003c!important;
+    color: #37003c !important;
 }
 
 .text-info:hover {
-    color: #2d0031!important;
+    color: #2d0031 !important;
 }
 
-a.text-info:focus, a.text-info:hover {
-    color: #37003c!important;
+a.text-info:focus,
+a.text-info:hover {
+    color: #37003c !important;
 }
 
 .sb-logo-font {
@@ -87,16 +88,17 @@ a.text-info:focus, a.text-info:hover {
 /* from Bulma */
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     border: 2px solid #37003c;
 }
 
 .text-primary {
-    color: #37003c!important;
+    color: #37003c !important;
 }
 
-a.text-primary:focus, a.text-primary:hover {
-    color: #37003c!important;
+a.text-primary:focus,
+a.text-primary:hover {
+    color: #37003c !important;
 }
 
 .icon {
@@ -155,25 +157,21 @@ button {
     color: #37003c !important;
 }
 
-/* .border-black {
-    border: 1px solid black !important;
-} */
-
 .bg-black {
     background: #37003c !important;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-a.category-badge > span.badge {
+a.category-badge>span.badge {
     background: #37003c !important;
     color: #fff !important;
 }
@@ -209,19 +207,21 @@ input[name='q']::placeholder {
     border: 0;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     color: #37003c;
     text-decoration: none;
     background-color: white;
 }
 
-.dropdown-item:focus, .dropdown-item {
+.dropdown-item:focus,
+.dropdown-item {
     color: #ff015b;
     text-decoration: none;
     background-color: white;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* ------bootstrap toasts -----*/
 
 .message-container {
     position: fixed;
@@ -240,10 +240,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -289,20 +289,22 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* ------Media Queries ----------*/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -320,8 +322,8 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -338,11 +340,12 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content a {
-	color: #37003c; /* text-info */
+    color: #37003c;
+    /* text-info */
 }
 
 /* Product Form */
@@ -434,18 +437,20 @@ input[name='q']::placeholder {
         border-color: #37003c;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }
 
 @media (max-width: 280px) {
-    
+
     .display-4.logo-font.text-black {
         font-size: 14px;
     }
 
-    .h2, h2 {
+    .h2,
+    h2 {
         font-size: 2rem;
         margin-top: 0.5rem;
     }
@@ -492,7 +497,8 @@ input[name='q']::placeholder {
         border-radius: 0.3rem
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }

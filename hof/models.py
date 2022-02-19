@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Hof(models.Model):
     name = models.CharField(max_length=254)
     quote = models.CharField(max_length=254)

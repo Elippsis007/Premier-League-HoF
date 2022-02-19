@@ -3,7 +3,6 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
-    # Meta options to tell django which model they will be connected with and which fields to be rendered
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
@@ -11,7 +10,6 @@ class OrderForm(forms.ModelForm):
                   'town_or_city', 'postcode', 'country',
                   'county',)
 
-    # Overriding the init which will allow customization
     def __init__(self, *args, **kwargs):
         """
         Add placeholders and classes, remove auto-generated
@@ -29,7 +27,6 @@ class OrderForm(forms.ModelForm):
             'county': 'County, State or Locality',
         }
 
-        # Starts the cursor in the "full_name" field when the page is loaded by the user
         self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'country':

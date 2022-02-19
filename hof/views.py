@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from .models import Hof
 
-# Create your views here.
 
 def hof_page(request):
     """ A view to show the Hall of Famers page """
