@@ -57,6 +57,17 @@ td {
     color: #555;
 }
 
+.pl-stats {
+    color: burlywood;
+}
+
+.hof_img {
+    vertical-align: middle;
+    border-style: solid;
+    border-color: burlywood;
+    border-width: thick;
+}
+
 .text-info {
     color: #37003c!important;
 }
