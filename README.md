@@ -1,108 +1,298 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">Premier League Hall Of Fame</h1>
 
-Welcome Elippsis007,
+## Project Overview
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is The Premier League Hall Of Fame. A website where fans can view Premier League Hall Of Famers, purchase latest season jerseys and memorabilia.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Deployed Site
+[View the Premier League Hall Of Fame](https://premier-league-hof.herokuapp.com/)
 
-## Gitpod Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+-   ### User stories
 
-`python3 -m http.server`
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/User_Stories.png"></h2>
 
-A blue button should appear to click: _Make Public_,
+-   ### Design
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### Structure
+    
+        -   The structure of the website was purposely designed to maintain a fluid, consistent display throughout as to not look cluttered, easy to navigate and easy to find what you are looking for.
+        
+        -   Website Colors and Font: Website colors and font remain consistent throughout.
+    
+    -   #### Colour Scheme
+    
+        -   The color scheme on this website is based on the Premier League brand which is meant to reinforce the brand identity and I feel it's appealing and easy on the eye. 
+        
+       <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/color_pallette.png"></h2>
+            
+    -   #### Typography
+    
+        -   [Bree Serif](https://fonts.google.com/specimen/Bree+Serif?query=bree) is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems.
+        
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+   ### Existing Features
+   
+   #### The Header includes:
+-   Navigation Bar: Allows users to navigate the site easily.
+    
+    <h2 align="center"><img src=""></h2>
+    
+   #### The Home page includes:
+-   A Search Bar: where users can search for keywords that appear in the accross all products in the website.
 
-A blue button should appear to click: _Make Public_,
+    <h2 align="center"><img src=""></h2>
+    
+   ##### Navlink dropdowns:
+-  Clicking on the navlin dropdwons display further website links.
+   
+    <h2 align="center"><img src=""></h2>
 
-Another blue button should appear to click: _Open Browser_.
+#### The User/Admin page includes:
+-   
+-   
+    <h2 align="center"><img src=""></h2>
+   
+   #### :
+-   
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    <h2 align="center"><img src=""></h2>
 
-To log into the Heroku toolbelt CLI:
+   #### :
+-   
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    <h2 align="center"><img src=""></h2>
+    
+   #### Register / Log In / Log Out page:
+    
+-   The register/log in/log out pages share the same layout and style, each have input fields for usernames and passwords and provide the same functionality.
+-   The register page asks users to input a username and password they wish to use for accessing the site. Once these are provided and submitted they are then added to an external database.
+-   Log In page asks the users to input their credentials from registration to give access to their user page and other pages to the website.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+<h2 align="center"><img src=""></h2>
 
-------
+<h2 align="center"><img src=""></h2>
 
-## Release History
+#### :
+-   
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    <h2 align="center"><img src=""></h2>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### :
+-   
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    <h2 align="center"><img src=""></h2>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### :
+-   
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    <h2 align="center"><img src=""></h2>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+#### :
+-   
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    <h2 align="center"><img src=""></h2>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### :
+-   
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    <h2 align="center"><img src=""></h2>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### :
+-   
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    <h2 align="center"><img src=""></h2>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Wireframes
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+-   Register Page Wireframe - [view]()
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-   Log In Page Wireframe - [view]()
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+-   Home Page Wireframe - [view]()
 
-------
+-   Home Page Collapsible Wireframe - [view]()
 
-## FAQ about the uptime script
+-   User Page Wireframe - [view]() 
 
-**Why have you added this script?**
+-   Add Book Page Wireframe - [view]()
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+-   Manage Genres - [view]()
 
-**How will this affect me?**
+## Mobile Wireframes
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-   Register/Login Page Wireframe - [view]()
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+-   Home Page Collapsible Wireframe - [view]()
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+-   User Page Wireframe - [view]() 
 
-**So….?**
+-   Add Book Page Wireframe - [view]()
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+-   Manage Genres - [view]()
 
-**Can I opt out?**
+## Database Scheme
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<h2 align="center"><img src=""></h2>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Sitemap
+-   The sitemap was created using [Octopus](https://octopus.do/)
+-   The sitemap can be found [here](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/sitemap.png)
 
-**Anything more?**
+## Technologies Used
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Frameworks, Libraries & Programs Used
+1.  [Django:](https://www.djangoproject.com/)
+     - Django was used as the main python framework in the building of this project.
+1.  [Heroku:](https://www.heroku.com/)
+     - Heroku was used as a cloud based platform to deploy this site.
+1.  [JSON:]https://www.json.org/json-en.html)
+     - MongoDB Atlas was used as the database for the creation of this project.
+1.  [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
+     - Jinja was used for templating.
+1.  [Freeformatter-Css beautifier:](https://www.freeformatter.com/css-beautifier.html)
+     - This was used to format the CSS stylesheet.
+1.  [Freeformatter-Html beautifier:](https://www.freeformatter.com/html-formatter.html)
+1.  [JSON formatter-JSON beautifier:](https://jsonformatter.org/)
+     - This was used to format each .JSON files.
+1.  [Font Awesome:](https://fontawesome.com/)
+     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1.  [BootStrap:](https://getbootstrap.com/)
+     - Various aspects of this website were structured using Bootstrap.
+     - Bootstrap was used to make some of this website responsive.
+1.  [BULMA:](https://bulma.io/)
+     - Some aspects of this website were also structured using BULMA.
+     - BULMA was used for CSS and to make some of this website responsive.
+1.  [CSS Tricks:](https://css-tricks.com/)
+     - This was used as a general reference resource.
+1.  [Balsamiq:](https://balsamiq.com/)
+     - Balsamiq was used to create the [wireframes]() during the design process.
+1.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
+     - Google Dev Tools was used throughout the project for various styling and testing purposes.
+1.  [Coolors:](https://coolors.co/)
+     - Coolors.co was used to create the project's color palette.
+1.  [Git](https://git-scm.com/)
+     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1.  [GitHub:](https://github.com/)
+     - GitHub is used to store the project's  code after being pushed from Git.
+1.  [StackOverflow:](https://stackoverflow.com/)
+     - Stack Overflow was used as a general reference resource.
+1.  [Responsive Design Checker:](http://ami.responsivedesign.is/#)
+     - Used to check website response across device types.
 
----
+### Testing
+Testing information can be found here in the separate [TESTING.md]()
 
-Happy coding!
+## Deployment
+
+This project was developed using Gitpod IDE and pushed to Github using the in-built terminal. Github can only host static websites it was necessary to deploy this project to Heroku because it is a compatible hosting platform for a back-end focused websits like this one.
+
+This project was deployed using Heroku and stored in GitHub.
+
+Before deploying the website to Heroku, the following three must be followed to allow the app to work in Heroku:
+
+1. Create requirements.txt file that contains the names of packages being used in Python. It is important to update this file if other packages or modules are installed during project development by using the following command:
+    - pip freeze --local > requirements.txt
+
+2. Create Procfile that contains the name of the application file so that Heroku knows what to run. If the Procfile has a blank line when it is created remove this as this may cause problems.
+
+3. Then push these files to GitHub. Once those steps are done, the website can be deployed in Heroku.
+
+### Heroku Deployment:
+
+    1. Log into Heroku.
+    2. Click the New button.
+    3. Click the option to create a new app.
+    4. Enter the app name in lowercase letters.
+    5. Select the correct geographical region.
+
+### Setting the environment variables:
+
+Navigate to the settings tab and then click the Reveal Config Vars button and add the following:
+
+    1. key: IP, value: 0.0.0.0
+    2. key: PORT, value: 5000
+    3. key: MONGO_DBNAME, value: (the name of the database that is being used for the project)
+    4. key: MONGO_URI, value:
+    
+    - This can be found in MongoDB by navigating to the clusters section of your MongoDB account.
+    - Click the cluster where the database is located.
+    - Click the connect button.
+    - Select the connect you application button.
+    - Copy the link provided to your application and ensure you have substituted the password and dbname with the correct values).
+
+    5. key: SECRET_KEY, value: (This is a custom secret key set up for configuration to keep client-side sessions secure).
+    
+### Enable automatic deployment:
+
+    1. Click the Deploy tab
+    2. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+
+### Connect app to Github Repository
+    1. Click the deploy tab and connect to GitHub.
+    2. Type the name of the repository into the search bar presented.
+    3. Click the Code dropdown button next to the green Gitpod button.
+    4. When the correct repository displays click the connect button.
+
+### Making a clone to run locally
+
+It is important to note that this project will not run locally unless an env.py file has been set up by the user which contains the IP, PORT, MONGO_DBNAME, MONGO_URI and SECRET_KEY which have all been kept secret in keeping with best security practices.
+
+    1. Log into GitHub.
+    2. Select the respository.
+    3. Click the Code dropdown button next to the green Gitpod button.
+    4. Download ZIP file and unpackage locally and open with IDE. Alternatively copy the URL in the HTTPS box.
+    5. Open the alternative editor and terminal window.
+    6. Type 'git clone' and paste the copied URL.
+    7. Press Enter. A local clone will be created.
+    
+Once the project been loaded into the IDE it is necessary to install the necessary requirements which can be done by typing the following command.
+
+-   -pip install -r requirements.txt
+
+### How to Fork the respository.
+    1. Log into GitHub.
+    2. In Github go to (https://github.com/Elippsis007/football_shelf_m3).
+    3. In the top right hand corner click "Fork".
+
+## Credits
+
+### Design and research
+
+#### The following is what I have used for reference and inspiration:
+    
+### Technical
+
+-   [Bootstrap:](https://getbootstrap.com/): Bootstrap was used throughout the project mainly to make the site responsive using the Bootstrap Grid System.
+1.  [Font Awesome:](https://fontawesome.com/)
+     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1.  [w3Schools:](https://www.w3schools.com//)
+     - For checking proper syntax of HTML and CSS elements.
+1.  [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+     - For checking markup validity of HTML.
+1.  [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+     - For checking CSS styling validity.
+1.  [Stackoverflow](https://stackoverflow.com/)
+     - I used Stackoverflow to help me with issues I was having when it was styling, margins, centering a div.
+
+### Content
+
+-   All content was written by the developer.
+
+### Media
+
+****
+
+### Acknowledgements
+
+-   My mentor Gerry for continuous helpful feedback and support.
+
+-   Tutor support at Code Institute for their support.
+
+-   I'd like to thank my girlfriend, mates and family for testing the website on their devices and for suggesting changes and bugs.
+
+## References
+
+Fontawesome: https://www.fontawesome.com
