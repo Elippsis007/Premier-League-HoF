@@ -1,5 +1,7 @@
 <h1 align="center">Premier League Hall Of Fame!</h1>
 
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/Am_I_Responsive.png"></h2>
+
 ## Project Overview
 
 This is The Premier League Hall Of Fame. A website where fans can view Premier League Hall Of Famers, purchase latest season jerseys and memorabilia.
@@ -11,7 +13,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 
 -   ### User stories
 
-<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/User_Stories.png"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/user_story/user_story.png"></h2>
 
 -   ### Design
 
@@ -25,7 +27,9 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
     
         -   The color scheme on this website is based on the Premier League brand which is meant to reinforce the brand identity and I feel it's appealing and easy on the eye. 
         
-       <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/color_pallette.png"></h2>
+       <h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/color_scheme/pl_color_palette.png"></h2>
+       
+       <h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/color_scheme/color-combo.png"></h2>
             
     -   #### Typography
     
