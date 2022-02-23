@@ -254,7 +254,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 
 ### How to Fork the respository.
     1. Log into GitHub.
-    2. In Github go to (https://github.com/Elippsis007/football_shelf_m3).
+    2. In Github go to (https://github.com/Elippsis007/Premier-League-HoF).
     3. In the top right hand corner click "Fork".
 
 ## Credits
