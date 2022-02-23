@@ -13,7 +13,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 
 -   ### User stories
 
-<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/User_Stories.png"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/user_story/user_story.png"></h2>
 
 -   ### Design
 
