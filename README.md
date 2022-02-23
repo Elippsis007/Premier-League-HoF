@@ -157,18 +157,7 @@ Before deploying the website to Heroku, the following three must be followed to 
 
 Navigate to the settings tab and then click the Reveal Config Vars button and add the following:
 
-    1. key: IP, value: 0.0.0.0
-    2. key: PORT, value: 5000
-    3. key: MONGO_DBNAME, value: (the name of the database that is being used for the project)
-    4. key: MONGO_URI, value:
-    
-    - This can be found in MongoDB by navigating to the clusters section of your MongoDB account.
-    - Click the cluster where the database is located.
-    - Click the connect button.
-    - Select the connect you application button.
-    - Copy the link provided to your application and ensure you have substituted the password and dbname with the correct values).
-
-    5. key: SECRET_KEY, value: (This is a custom secret key set up for configuration to keep client-side sessions secure).
+    {TEXT TO GO HERE}
     
 ### Enable automatic deployment:
 
