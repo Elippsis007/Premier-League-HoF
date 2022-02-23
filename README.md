@@ -37,23 +37,34 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
         
 ## Features
 
-   ### Existing Features [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/FEATURES.md)
+-   View Features - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/FEATURES.md)
+
 
 ## Wireframes
 
--   Register Page Wireframe - [view]()
+-   Register Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/register_signup.png)
 
--   Log In Page Wireframe - [view]()
+-   Log In Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/login_sign_in.png)
 
--   Home Page Wireframe - [view]()
+-   Logout Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/log_out_sign_out.png)
 
--   Home Page Collapsible Wireframe - [view]()
+-   Home Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/home.png)
 
--   User Page Wireframe - [view]() 
+-   Hall Of Fame Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/hall_of_fame.png)
 
--   Add Book Page Wireframe - [view]()
+-   All Products Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/all_prod.png)
 
--   Manage Genres - [view]()
+-   Checkout Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/checkout.png)
+
+-   Shopping Cart Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/shopping_cart.png)
+
+-   Order Summary Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/order_summary.png)
+
+-   Profile Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/profile.png) 
+
+-   Product Management Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/product_management.png)
+
+-   Product Management Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/verify_email_message.png)
 
 ## Mobile Wireframes
 
