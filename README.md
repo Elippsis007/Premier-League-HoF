@@ -33,7 +33,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
             
     -   #### Typography
     
-        -   [Bebas Neue]() is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems.
+        -   [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=Bebas+Neue) is the main font used throughout the whole website with cursive as the fallback font in case for any reason the font isn't being recognized on different operating systems.
         
 ## Features
 
@@ -80,7 +80,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 
 ## Database Scheme
 
-<h2 align="center"><img src=""></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/db_schema/db_schema_hof.png"></h2>
 
 ## Sitemap
 -   The sitemap was created using [Octopus](https://octopus.do/)
