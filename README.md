@@ -29,7 +29,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
             
     -   #### Typography
     
-        -   [Bree Serif](https://fonts.google.com/specimen/Bree+Serif?query=bree) is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems.
+        -   [Bebas Neue]() is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems.
         
 ## Features
 
