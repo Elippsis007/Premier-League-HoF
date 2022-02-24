@@ -113,7 +113,16 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
     -   #### Checkout
         - Ability to update and save their details for future purchases
 
--   ### Features Implemented
+-   ### Defensive Programming
+        -  An error is launched if the user attempts to visit a part of the site where they are not authorised.
+        -  When a product is added without the image a default image is added.
+        -  There is form validation to all forms to make sure that all required information is included before submitting.
+        -  If the user inputs wrong data they will be met with a popup explaining to them on how to continue.
+        -  Any visitor that attempts to access a part of the website will be met with an error telling them that they are not authortised to access.
+        -  @login_required decorator was added to restrict users trying to access certain pages not available to them.
+        -   A logged out user tries to access a restricted page, they will be redirected to the login page.
+       
+-   ### Future Features
         - The ability for users to add reviews to products.
         - A new range of products
         - Video embedded on the HOF page for each footballer
