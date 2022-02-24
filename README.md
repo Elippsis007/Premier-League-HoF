@@ -35,11 +35,6 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
     
         -   [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=Bebas+Neue) is the main font used throughout the whole website with cursive as the fallback font in case for any reason the font isn't being recognized on different operating systems.
         
-## Features
-
--   View Features - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/FEATURES.md)
-
-
 ## Wireframes
 
 -   Register Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/desktop_wireframes/register_signup.png)
@@ -77,6 +72,12 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 -   Add Book Page Wireframe - [view]()
 
 -   Manage Genres - [view]()
+
+## Features
+
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/site_navigation/site_nav.png"></h2>
+
+-   View Features - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/FEATURES.md)
 
 ## Database Scheme
 
