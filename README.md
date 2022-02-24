@@ -114,31 +114,32 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
         - Ability to update and save their details for future purchases
 
 -   ### Defensive Programming
-        -  An error is launched if the user attempts to visit a part of the site where they are not authorised.
-        -  When a product is added without the image a default image is added.
-        -  There is form validation to all forms to make sure that all required information is included before submitting.
-        -  If the user inputs wrong data they will be met with a popup explaining to them on how to continue.
-        -  Any visitor that attempts to access a part of the website will be met with an error telling them that they are not authortised to access.
-        -  @login_required decorator was added to restrict users trying to access certain pages not available to them.
-        -   A logged out user tries to access a restricted page, they will be redirected to the login page.
+    -  An error is launched if the user attempts to visit a part of the site where they are not authorised.
+    -  When a product is added without the image a default image is added.
+    -  There is form validation to all forms to make sure that all required information is included before submitting.
+    -  If the user inputs wrong data they will be met with a popup explaining to them on how to continue.
+    -  Any visitor that attempts to access a part of the website will be met with an error telling them that they are not authortised to access.
+    -  @login_required decorator was added to restrict users trying to access certain pages not available to them.
+    -   A logged out user tries to access a restricted page, they will be redirected to the login page.
        
 -   ### Future Features
-        - The ability for users to add reviews to products.
-        - A new range of products
-        - Video embedded on the HOF page for each footballer
-        - A voting page for the next inductee to hall of fame.
+    - The ability for users to add reviews to products.
+    - A new range of products
+    - Video embedded on the HOF page for each footballer
+    - A voting page for the next inductee to hall of fame.
 
 ## Database
+The database uses SQL through PostgreSQL and was created using fixtures with categories.json, products.json and hof.json
 
 <h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/db_schema/db_schema_hof.png"></h2>
 
--   ### [SQLite] (https://www.sqlite.org/index.html)
-        - A cloud database that holds the products, user and order fields.
--   ### [Postgres] (https://www.postgresql.org/) 
+-   ### [SQLite](https://www.sqlite.org/index.html)
+    - A cloud database that holds the products, user and order fields.
+-   ### [Postgres](https://www.postgresql.org/) 
 
 ## Sitemap
 -   The sitemap was created using [Octopus](https://octopus.do/)
--   The sitemap can be found [here](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/sitemap/hof_sitemap.png)
+-   The sitemap can be found [Here](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/sitemap/hof_sitemap.png)
 
 ## Technologies Used
 
