@@ -128,9 +128,13 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
         - Video embedded on the HOF page for each footballer
         - A voting page for the next inductee to hall of fame.
 
-## Database Scheme
+## Database
 
 <h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/db_schema/db_schema_hof.png"></h2>
+
+-   ### [SQLite] (https://www.sqlite.org/index.html)
+        - A cloud database that holds the products, user and order fields.
+-   ### [Postgres] (https://www.postgresql.org/) 
 
 ## Sitemap
 -   The sitemap was created using [Octopus](https://octopus.do/)
