@@ -79,6 +79,46 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 
 -   View Features - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/FEATURES.md)
 
+-   ### Features Implemented
+
+    -   #### Register for profile
+        - Create a profile to save their orders and personal information
+        - Confirm their details are correct via email verification
+
+    -   #### Logging into user profile
+        - Log in to profile to see their orders and their personal information
+        - Ability to edit personal information
+
+    -   #### Product (Jerseys/Memorabilia) Pages
+        - See the products for sale on the site
+        - Sort products by A-Z, Name, Category, Price
+        - Users can see the cost of the product
+        - Product rating are also available to users.
+
+    -   #### Product (Jerseys/Memorabilia) Detail Pages
+        - See the products summary
+        - Ability to select sizes and quanties required
+        - Add to cart function        
+
+    -   #### Products Management
+        - Add product
+        - Delete product
+        - Edit product
+        - Add product image
+
+    -   #### Shopping Cart
+        - Ability to change the number of products they wish to purchase
+        - Breakdown of total costs
+
+    -   #### Checkout
+        - Ability to update and save their details for future purchases
+
+-   ### Features Implemented
+        - The ability for users to add reviews to products.
+        - A new range of products
+        - Video embedded on the HOF page for each footballer
+        - A voting page for the next inductee to hall of fame.
+
 ## Database Scheme
 
 <h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/db_schema/db_schema_hof.png"></h2>
@@ -101,31 +141,32 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 1.  [Freeformatter-Css beautifier:](https://www.freeformatter.com/css-beautifier.html)
      - This was used to format the CSS stylesheet.
 1.  [Freeformatter-Html beautifier:](https://www.freeformatter.com/html-formatter.html)
-1.  [JSON formatter-JSON beautifier:](https://jsonformatter.org/)
+2.  - This was used to format the HTML accross the website.
+3.  [JSON formatter-JSON beautifier:](https://jsonformatter.org/)
      - This was used to format each .JSON files.
-1.  [Font Awesome:](https://fontawesome.com/)
+4.  [Font Awesome:](https://fontawesome.com/)
      - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1.  [BootStrap:](https://getbootstrap.com/)
+5.  [BootStrap:](https://getbootstrap.com/)
      - Various aspects of this website were structured using Bootstrap.
      - Bootstrap was used to make some of this website responsive.
-1.  [BULMA:](https://bulma.io/)
+6.  [BULMA:](https://bulma.io/)
      - Some aspects of this website were also structured using BULMA.
      - BULMA was used for CSS and to make some of this website responsive.
-1.  [CSS Tricks:](https://css-tricks.com/)
+7.  [CSS Tricks:](https://css-tricks.com/)
      - This was used as a general reference resource.
-1.  [Balsamiq:](https://balsamiq.com/)
+8.  [Balsamiq:](https://balsamiq.com/)
      - Balsamiq was used to create the [wireframes]() during the design process.
-1.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
+9.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
      - Google Dev Tools was used throughout the project for various styling and testing purposes.
-1.  [Coolors:](https://coolors.co/)
+10.  [Coolors:](https://coolors.co/)
      - Coolors.co was used to create the project's color palette.
-1.  [Git](https://git-scm.com/)
+11.  [Git](https://git-scm.com/)
      - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-1.  [GitHub:](https://github.com/)
+12.  [GitHub:](https://github.com/)
      - GitHub is used to store the project's  code after being pushed from Git.
-1.  [StackOverflow:](https://stackoverflow.com/)
+13.  [StackOverflow:](https://stackoverflow.com/)
      - Stack Overflow was used as a general reference resource.
-1.  [Responsive Design Checker:](http://ami.responsivedesign.is/#)
+14.  [Responsive Design Checker:](http://ami.responsivedesign.is/#)
      - Used to check website response across device types.
 
 ### Testing
