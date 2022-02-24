@@ -16,12 +16,14 @@ import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get(
-    'SECRET_KEY', 'aen5p_jfe3#ta_9u2m7rkgko*u9mmxm4we7d3c!5ots)ol40xo')
+import os
+if os.path.exists("env.py"):
+    import env
+
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'True' in os.environ
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['premier-league-hof.herokuapp.com', 'localhost']
 
@@ -138,7 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-GB'
 
 TIME_ZONE = 'GMT'
 
