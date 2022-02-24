@@ -84,7 +84,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 
 ## Sitemap
 -   The sitemap was created using [Octopus](https://octopus.do/)
--   The sitemap can be found [here](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/sitemap.png)
+-   The sitemap can be found [here](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/sitemap/hof_sitemap.png)
 
 ## Technologies Used
 
