@@ -7,9 +7,12 @@ html {
 body {
     /* Ensures the images stays put in the center of the page */
     background: url('/media/pl_hof_background.jpg');
-    background-repeat:no-repeat;
-    background-size:100%;
-    background-position:center;
+    background-size:100vw 100vh;
+    /* background-position:center; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
     /* Setting the font color for the website */
     color: #555;
     /* Setting the font for the website */
