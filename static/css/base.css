@@ -6,10 +6,10 @@ html {
 
 body {
     /* Ensures the images stays put in the center of the page */
-    background: url('/media/pl_hof_background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    /* The eventual height of the top header */
-    height: calc(100vh - 164px);
+    background: url('/media/pl_hof_background.jpg');
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-position:center;
     /* Setting the font color for the website */
     color: #555;
     /* Setting the font for the website */
