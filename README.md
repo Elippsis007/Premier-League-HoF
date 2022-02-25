@@ -1,4 +1,4 @@
-<h1 align="center">Premier League Hall Of Fame!</h1>
+<h1 align="center">Premier League Hall Of Fame</h1>
 
 <h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/Am_I_Responsive.png"></h2>
 
