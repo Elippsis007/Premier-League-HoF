@@ -33,7 +33,7 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
             
     -   #### Typography
     
-        -   [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue?query=Bebas+Neue) is the main font used throughout the whole website with cursive as the fallback font in case for any reason the font isn't being recognized on different operating systems.
+        -   [Oswald](https://fonts.google.com/specimen/Oswald?query=osw) is the main font used throughout the whole website with cursive as the fallback font in case for any reason the font isn't being recognized on different operating systems.
         
 ## Wireframes
 
