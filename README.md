@@ -63,15 +63,30 @@ This is The Premier League Hall Of Fame. A website where fans can view Premier L
 
 ## Mobile Wireframes
 
--   Register/Login Page Wireframe - [view]()
+-   Home Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/home_mob.png)
 
--   Home Page Collapsible Wireframe - [view]()
+-   Search Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/search_mob.png)
 
--   User Page Wireframe - [view]() 
+-   Hall Of Fame Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/hof_mob.png)
 
--   Add Book Page Wireframe - [view]()
+-   Product Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/prod_jers_mem_mob.png) 
 
--   Manage Genres - [view]()
+-   Product Detail Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/prod_detail_mob.png)
+
+-   Product Cart Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/prod_cart_mob.png)
+
+-   Empty Cart Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/empty_cart_mob.png)
+
+-   Checkout Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/checkout_mob.png)
+
+-   Order Summary Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/ord_sum_mob.png)
+
+-   Sign Up Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/sign_up_mob.png)
+
+-   Sign In Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/sign_in_mob.png)
+
+- Forgot Password Page Wireframe - [view](https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/wireframes/mobile_wireframes/forgt_pass_mob.png)
+
 
 ## Features
 
@@ -148,8 +163,8 @@ The database uses SQL through PostgreSQL and was created using fixtures with cat
      - Django was used as the main python framework in the building of this project.
 1.  [Heroku:](https://www.heroku.com/)
      - Heroku was used as a cloud based platform to deploy this site.
-1.  [JSON:]https://www.json.org/json-en.html)
-     - MongoDB Atlas was used as the database for the creation of this project.
+1.  [JSON:](https://www.json.org/json-en.html)
+     - JSON files were used as the database for products and images for the creation of this project.
 1.  [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
      - Jinja was used for templating.
 1.  [Freeformatter-Css beautifier:](https://www.freeformatter.com/css-beautifier.html)
@@ -169,7 +184,7 @@ The database uses SQL through PostgreSQL and was created using fixtures with cat
 7.  [CSS Tricks:](https://css-tricks.com/)
      - This was used as a general reference resource.
 8.  [Balsamiq:](https://balsamiq.com/)
-     - Balsamiq was used to create the [wireframes]() during the design process.
+     - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/Premier-League-HoF/tree/main/readme_images/website_design/wireframes) during the design process.
 9.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
      - Google Dev Tools was used throughout the project for various styling and testing purposes.
 10.  [Coolors:](https://coolors.co/)
