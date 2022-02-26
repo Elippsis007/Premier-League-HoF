@@ -184,7 +184,7 @@ The database uses SQL through PostgreSQL and was created using fixtures with cat
 7.  [CSS Tricks:](https://css-tricks.com/)
      - This was used as a general reference resource.
 8.  [Balsamiq:](https://balsamiq.com/)
-     - Balsamiq was used to create the [wireframes]() during the design process.
+     - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/Premier-League-HoF/tree/main/readme_images/website_design/wireframes) during the design process.
 9.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
      - Google Dev Tools was used throughout the project for various styling and testing purposes.
 10.  [Coolors:](https://coolors.co/)
