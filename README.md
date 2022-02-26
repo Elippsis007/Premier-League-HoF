@@ -220,7 +220,7 @@ Before deploying the website to Heroku, the following three must be followed to 
 
 #### Connecting to Heroku
 
-   The project was developed using [GitPod]() and pushed to [GitHub]() then deployed on Heroku using these instructions:
+   The project was developed using [GitPod](https://www.gitpod.io/) and pushed to [GitHub](https://github.com/) then deployed on Heroku using these instructions:
 - Log in to Heroku and create a new app by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to your location.
 - Navigate to Heroku Resources and add Postgres using the free plan.
 - Create a requirements.txt file using command pip3 freeze > requirements.txt
@@ -235,7 +235,7 @@ Before deploying the website to Heroku, the following three must be followed to 
 - Create a superuser using command: heroku run python3 manage.py createsuperuser so that you can log in to admin as required.
 - From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
 - Search for your GitHub repo and connect then Enable Automatic Deploys.
-- Generate secret key. Strong secret keys can be obtained from [MiniWebTool](). This automatically generates a secret key 50 characters long with alphanumeric characters and symbols.
+- Generate secret key. Strong secret keys can be obtained from [MiniWebTool](https://miniwebtool.com/). This automatically generates a secret key 50 characters long with alphanumeric characters and symbols.
 - Add secret key to GitPod variables and Heroku config vars.
 - Set up Amazon AWS S3 bucket using instructions below
 - In the dashboard click "Settings" -> "Reveal Config Vars"
