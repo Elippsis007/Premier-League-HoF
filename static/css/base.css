@@ -30,6 +30,11 @@ body {
     margin-bottom: 2rem;
 }
 
+.featurette-heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 p {
     font-size: large;
     text-transform: uppercase;
