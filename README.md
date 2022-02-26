@@ -199,7 +199,7 @@ The database uses SQL through PostgreSQL and was created using fixtures with cat
      - Used to check website response across device types.
 
 ### Testing
-Testing information can be found here in the separate [TESTING.md]()
+Testing information can be found here in the separate [TESTING.md](https://github.com/Elippsis007/Premier-League-HoF/blob/main/TESTING.md)
 
 ## Deployment
 
@@ -218,49 +218,104 @@ Before deploying the website to Heroku, the following three must be followed to 
 
 ### Heroku Deployment:
 
-    1. Log into Heroku.
-    2. Click the New button.
-    3. Click the option to create a new app.
-    4. Enter the app name in lowercase letters.
-    5. Select the correct geographical region.
+#### Connecting to Heroku
 
-### Setting the environment variables:
+   The project was developed using [GitPod]() and pushed to [GitHub]() then deployed on Heroku using these instructions:
+- Log in to Heroku and create a new app by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to your location.
+- Navigate to Heroku Resources and add Postgres using the free plan.
+- Create a requirements.txt file using command pip3 freeze > requirements.txt
+- Create a Procfile with the terminal command web: gunicorn knit_happens.wsgi:application and at this point checking the Procfile to make sure there is no extra blank line as this can cause issues when deploying to Heroku.
+- Use the loaddata command to load the fixtures for both json files: python3 manage.py loaddata categories.json and python3 manage.py loaddata products.json
+- If it returns error message: django.db.utils.OperationalError: FATAL: role does not exist run unset PGHOSTADDR in your terminal and run the commands in step 11 again.
+- From the CLI log in to Heroku using command heroku login -i.
+- Temporarily disable Collectstatic by running: heroku:config:set DISABLE_COLLECTSTATIC=1 --app So that Heroku won't try to collect static files when we deploy.
+- Add Heroku app name to ALLOWED_HOSTS in settings.py.
+- Commit changes to GitHub using git add ., git commit -m , git push.
+- Then deploy to Heroku using git push heroku main If the git remote isn't initialised you may have to do that first by running *heroku git:remote -a
+- Create a superuser using command: heroku run python3 manage.py createsuperuser so that you can log in to admin as required.
+- From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
+- Search for your GitHub repo and connect then Enable Automatic Deploys.
+- Generate secret key. Strong secret keys can be obtained from [MiniWebTool](). This automatically generates a secret key 50 characters long with alphanumeric characters and symbols.
+- Add secret key to GitPod variables and Heroku config vars.
+- Set up Amazon AWS S3 bucket using instructions below
+- In the dashboard click "Settings" -> "Reveal Config Vars"
+- Set config vars using advice below.
 
-Navigate to the settings tab and then click the Reveal Config Vars button and add the following:
+### Amazon AWS
 
-    {TEXT TO GO HERE}
-    
-### Enable automatic deployment:
+- Create Amazon AWS account and create a new bucket in the S3 services and choose your closest region.
+- Uncheck block all public access and create bucket.
+- From Properties tab turn on static website hosting using default values of index.html and errors.html.
+- On permissions tab include CORS configuration:
 
-    1. Click the Deploy tab
-    2. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+        [
+          {
+              "AllowedHeaders": [
+                  "Authorization"
+              ],
+              "AllowedMethods": [
+                  "GET"
+              ],
+              "AllowedOrigins": [
+                  "*"
+              ],
+              "ExposeHeaders": []
+          }
+        ]
 
-### Connect app to Github Repository
-    1. Click the deploy tab and connect to GitHub.
-    2. Type the name of the repository into the search bar presented.
-    3. Click the Code dropdown button next to the green Gitpod button.
-    4. When the correct repository displays click the connect button.
+- Create security policy: S3 Bucket Policy, allow all principles by adding a * and Amazon S3 services and selecting Get Object action. Paste ARN from Bucket Policy, add statement, generate policy and copy and paste into Bucket Policy. Also add /* at end of resource key to allow use of all pages.
+- Under public access select access to all List Objects.
+- Create Group for the bucket through IAM. Create policy by importing AWS S3 Full Access policy and add ARN from bucket to the policy resources. Attach policy to group.
+- Create user, give programmatic access and add user to the group. Download CSV file when prompted to save access key ID an secret access key to save to environment and config variables.
+- Add AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME = 'eu-west-2' to settings.py.
+- Add, commit and push to GitHub then navigate to Heroku to confirm static files collected successfully on the Build Log. The DISABLE_COLLECTSTATIC variable can now be deleted.
 
-### Making a clone to run locally
+### Gmail Client
 
-It is important to note that this project will not run locally unless an env.py file has been set up by the user which contains the IP, PORT, MONGO_DBNAME, MONGO_URI and SECRET_KEY which have all been kept secret in keeping with best security practices.
+In settings.py change the DEFAULT_FROM_EMAIL to your own email address.
+- Go to your Gmail account and navigate to the 'Settings' tab.
+- Go to 'Accounts and Imports', 'Other Google Account Settings'.
+- Go to the 'Security' tab, and scroll down to 'Signing in to Google'.
+- If required, click to turn on '2-step Verification**', then 'Get Started', and enter your password.
+- Verify using your preferred method, and turn on 2-step verification.
+- Go back to 'Security', 'Signing in to Google', then go to 'App Passwords'.
+- Enter your password again if prompted, then set 'App' to Mail, 'Device' to Other, and type in Django.
+- Copy and paste the passcode that shows up, this is your 'EMAIL_HOST_PASS' variable to add to your environment/config variables. 'EMAIL_HOST_USER' is the Gmail email address.
 
-    1. Log into GitHub.
-    2. Select the respository.
-    3. Click the Code dropdown button next to the green Gitpod button.
-    4. Download ZIP file and unpackage locally and open with IDE. Alternatively copy the URL in the HTTPS box.
-    5. Open the alternative editor and terminal window.
-    6. Type 'git clone' and paste the copied URL.
-    7. Press Enter. A local clone will be created.
-    
-Once the project been loaded into the IDE it is necessary to install the necessary requirements which can be done by typing the following command.
+### Config Vars
+The config/environment variables could be setup as below:
 
--   -pip install -r requirements.txt
+<h2 align="center"><img src="https://github.com/Elippsis007/Premier-League-HoF/blob/main/readme_images/website_design/config_var/config_vars.png"></h2>
 
-### How to Fork the respository.
-    1. Log into GitHub.
-    2. In Github go to (https://github.com/Elippsis007/Premier-League-HoF).
-    3. In the top right hand corner click "Fork".
+#### Locating Config Var Key-Value Pairs
+To find the values of each key:
+- SECRET_KEY: This is a random string provided when creating the Django project and can easily be changed to ensure extra security.
+- DATABASE_URL: This is temporary.
+- STRIPE_PUBLIC_KEY: Retrived from Stripe Dashboard in the Developer's API section (Publishable key).
+- STRIPE_SECRET_KEY: Retrived from Stripe Dashboard in the Developer's API section (Secret key)
+- STRIPE_WH_SECRET: Retrived from Stripe Dashboard in the Developer's after creating an endpoint for your webhook (Signing secret).
+- EMAIL_HOST_USER: Your email address or username.
+- EMAIL_HOST_PASS: Your passcode from your email client.
+- AWS_SECRET_ACCESS_KEY: From the CSV file that you download having created a User in Amazon AWS S3.
+- AWS_ACCESS_KEY_ID: From the CSV file that you download having created a User in Amazon AWS S3.
+
+### Contribute to the site
+- Navigate to GitHub and log in
+- Locate my repo
+- On the right side of the screen click Fork
+- This creates a copy in your own repository to make changes in GitPod
+- Once finished with changes add, commit and push to your own GitHub
+- Click Pull Requests and select "New Pull Request" button.
+
+### Run the project locally
+
+To clone this project from GitHub follow the instructions taken from GitHub Docs explained here:
+- Navigate to the GitHub Repository
+- To clone using HTTPS click the clipboard symbol under "Clone with HTTPS". To clone using SSH key click Use SSH then click the clipboard symbol. To clone using GitHub CLI select Use GitHub CLI and click the clipboard symbol.
+- Open Git Bash
+- Change the working directory to the location you want the cloned directory to be.
+- Type 'git clone' and paste the url copied from step 3.
+- Press 'enter' to create your clone.
 
 ## Credits
 
@@ -286,17 +341,15 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 
 -   All content was written by the developer.
 
-### Media
-
-****
-
 ### Acknowledgements
 
 -   My mentor Gerry for continuous helpful feedback and support.
 
 -   Tutor support at Code Institute for their support.
 
--   I'd like to thank my girlfriend, mates and family for testing the website on their devices and for suggesting changes and bugs.
+-   I'd like to thank my girlfriend Bruna who has been a rock and a huge support for me, mates and family for testing the website on their devices and for suggesting changes and bugs.
+-   I also want to give a shout out to Suzybee, Alan and Gaff for assiting me with some late website troubles, without them
+I think I would be in a good spot of bother and time was precious, thank you so much for your guidance and assistance!
 
 ## References
 
