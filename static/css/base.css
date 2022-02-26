@@ -90,7 +90,7 @@ html {
  .logo-font {
      text-transform: uppercase;
 }
- #delivery-banner h4 {
+ #delivery-banner h3 {
      text-transform: uppercase;
 }
  .main-logo-link {
@@ -337,7 +337,7 @@ html {
          padding: .6rem .6rem;
          font-size: 1rem;
     }
-     #delivery-banner h4 {
+     #delivery-banner h3 {
          font-size: .9rem;
          text-transform: uppercase;
     }
@@ -376,7 +376,7 @@ html {
          padding: .6rem .6rem;
          font-size: 14px;
     }
-     #delivery-banner h4 {
+     #delivery-banner h3 {
          font-size: 14px;
          text-transform: uppercase;
     }
