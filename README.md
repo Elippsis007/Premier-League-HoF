@@ -163,8 +163,8 @@ The database uses SQL through PostgreSQL and was created using fixtures with cat
      - Django was used as the main python framework in the building of this project.
 1.  [Heroku:](https://www.heroku.com/)
      - Heroku was used as a cloud based platform to deploy this site.
-1.  [JSON:]https://www.json.org/json-en.html)
-     - MongoDB Atlas was used as the database for the creation of this project.
+1.  [JSON:](https://www.json.org/json-en.html)
+     - JSON files were used as the database for products and images for the creation of this project.
 1.  [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
      - Jinja was used for templating.
 1.  [Freeformatter-Css beautifier:](https://www.freeformatter.com/css-beautifier.html)
