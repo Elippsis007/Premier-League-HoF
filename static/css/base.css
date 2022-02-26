@@ -6,17 +6,17 @@ html {
 
 body {
     /* Ensures the images stays put in the center of the page */
-    background: url('/media/pl_hof_background.jpg');
-    background-size:100vw 100vh;
-    /* background-position:center; */
+    background: url('/media/pl_hof_background_2.jpg');
+    background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     
     
     /* Setting the font color for the website */
     color: #555;
     /* Setting the font for the website */
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', cursive;
 }
 
 /* Text & Table Stylings - HOF */
@@ -32,6 +32,7 @@ body {
 
 p {
     font-size: large;
+    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
@@ -111,6 +112,10 @@ a.text-primary:hover {
 }
 
 .logo-font {
+    text-transform: uppercase;
+}
+
+#delivery-banner h4 {
     text-transform: uppercase;
 }
 
@@ -424,6 +429,7 @@ input[name='q']::placeholder {
 
     #delivery-banner h4 {
         font-size: .9rem;
+        text-transform: uppercase;
     }
 
     .btn.btn-outline-black.rounded-0,
@@ -477,6 +483,7 @@ input[name='q']::placeholder {
 
     #delivery-banner h4 {
         font-size: 14px;
+        text-transform: uppercase;
     }
 
     .btn.btn-outline-black.rounded-0,
