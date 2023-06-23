@@ -347,7 +347,7 @@ To clone this project from GitHub follow the instructions taken from GitHub Docs
 
 -   Tutor support at Code Institute for their support.
 
--   I'd like to thank my girlfriend Bruna who has been a rock and a huge support for me, mates and family for testing the website on their devices and for suggesting changes and bugs.
+-   I'd like to thank my mates and family for testing the website on their devices and for suggesting changes and bugs.
 -   I also want to give a shout out to Suzybee, Alan and Gaff for assiting me with some late website troubles, without them
 I think I would be in a good spot of bother and time was precious, thank you so much for your guidance and assistance!
 
