@@ -23,7 +23,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['premier-league-hof.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['premier-league-hof.onrender.com', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
