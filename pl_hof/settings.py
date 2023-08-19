@@ -18,7 +18,7 @@ if os.path.exists("env.py"):
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'aen5p_jfe3#ta_9u2m7rkgko*u9mmxm4we7d3c!5ots)ol40xo')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
